@@ -107,68 +107,28 @@ header("location: about.php");
      		 </div>
         </div>	
                <div class="form-group">
-      			<br><label class="control-label col-sm-2">KULTUR TEKNIS :</label><br>
+      			<br><label class="control-label col-sm-2">KETERANGAN :</label><br>
       		<div class="col-sm-10">
                 <?php
                        $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<textarea  rows='8' class='form-control' id='kulturteknis' name='kulturteknis' >".$data['kulturteknis']."</textarea><br>";
+                       echo "<textarea  rows='8' class='form-control' id='keterangan' name='keterangan' >".$data['keterangan']."</textarea><br>";
                     }
                 ?>
      		 </div>  
         </div>
-         <div class="form-group">
-      			<br><label class="control-label col-sm-2">FISIK MEKANIS :</label><br>
-      		<div class="col-sm-10">
-                <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea rows='8' class='form-control' id='fisikmekanis' name='fisikmekanis'>".$data['fisikmekanis']."</textarea><br>";
-                    }
-                ?>
-     		 </div>  
-        </div>
-         <div class="form-group">
-      			<br><label class="control-label col-sm-2">KIMIAWI :</label><br>
-      		<div class="col-sm-10">
-                <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea  rows='8' class='form-control' id='kimiawi' name='kimiawi'>".$data['kimiawi']."</textarea><br>";
-                    }
-                ?>
-     		 </div>  
-        </div>
-          <div class="form-group">
-      			<br><label class="control-label col-sm-2">HAYATI :</label><br>
-      		<div class="col-sm-10">
-                <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea rows='8' class='form-control' id='hayati' name='hayati'>".$data['hayati']."</textarea><br>";
-                    }
-                ?>
-     		 </div>  
-        </div>
+         
+          
      <button type="submit" name ="submit" class="btn btn-primary">Simpan</button>
          <?php
                     if(isset($_POST['submit'])){
                       $id = $_GET['id'];
                       $namapenyakit = $_POST['namapenyakit'];
                       $jenispenyakit = $_POST['jenispenyakit'];
-                      $kulturteknis = $_POST['kulturteknis'];
-                      $fisikmekanis = $_POST['fisikmekanis'];
-                      $kimiawi = $_POST['kimiawi'];
-                      $hayati = $_POST['hayati'];     
-                      $query="update penyakit SET namapenyakit='".$_POST['namapenyakit']."', jenispenyakit='".$_POST['jenispenyakit']."', kulturteknis='".$_POST['kulturteknis']."', fisikmekanis='".$_POST['fisikmekanis']."', kimiawi='".$_POST['kimiawi']."', hayati='".$_POST['hayati']."' WHERE idpenyakit='$id'";
+                      $keterangan = $_POST['keterangan'];     
+                      $query="update penyakit SET namapenyakit='".$_POST['namapenyakit']."', jenispenyakit='".$_POST['jenispenyakit']."', keterangan='".$_POST['keterangan']."' WHERE idpenyakit='$id'";
                       mysqli_query($konek_db, $query);
                     }
                 ?>

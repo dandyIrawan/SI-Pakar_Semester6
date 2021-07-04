@@ -88,29 +88,12 @@ header("location: about.php");
 				</div>
 			</div>	
           <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Kultur Teknis:</label>
+				<label class="control-label col-sm-2" for="alamat">Keterangan:</label>
 				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="kulturteknis"></textarea>
+                    <textarea rows='8' class="form-control" name="keterangan"></textarea>
 				</div>
 			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Fisik Mekanis:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="fisikmekanis"></textarea>
-				</div>
-			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Kimiawi:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="kimiawi"></textarea>
-				</div>
-			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Hayati:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="hayati"></textarea>
-				</div>
-			</div>
+          
           <button type="submit" name ="submit" class="btn btn-primary">Simpan</button><br>
           <?php		
                     if(isset($_POST['submit'])){
@@ -118,11 +101,8 @@ header("location: about.php");
                     $idpenyakit     = $_POST['idpenyakit'];
                     $namapenyakit   = $_POST['namapenyakit'];
                     $jenispenyakit   = $_POST['jenispenyakit'];
-                    $kulturteknis   = $_POST['kulturteknis'];
-                    $fisikmekanis   = $_POST['fisikmekanis'];
-                    $kimiawi        = $_POST['kimiawi'];
-                    $hayati         = $_POST['hayati'];
-                    $query="INSERT INTO penyakit SET idpenyakit='$idpenyakit',namapenyakit='$namapenyakit',jenispenyakit='$jenispenyakit',kulturteknis='$kulturteknis', fisikmekanis='$fisikmekanis',kimiawi='$kimiawi',hayati='$hayati'";
+                    $keterangan   = $_POST['keterangan'];
+                    $query="INSERT INTO penyakit SET idpenyakit='$idpenyakit',namapenyakit='$namapenyakit',jenispenyakit='$jenispenyakit',keterangan='$keterangan'";
                    $result=mysqli_query($konek_db, $query);
                         if($result){
                             echo '<script language="javascript">';
