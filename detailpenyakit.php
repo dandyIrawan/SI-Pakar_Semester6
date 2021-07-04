@@ -137,7 +137,7 @@ header("location: about.php");
               <label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
               <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
             </div>
-              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"><span class="glyphicon glyphicon-off"></span> Login</button>
+              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post">Login</button>
           </form>
         </div>
       </div>

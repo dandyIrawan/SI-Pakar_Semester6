@@ -75,11 +75,10 @@ header("location: about.php");
 				<div class="col-sm-10">           
 				<select class="form-control" name="daerah"  onChange='this.form.submit();'>
 				<option>Daerah</option>
-                <option>Akar</option>
-                <option>Batang</option>
-                <option>Daun</option>
-                <option>Bunga</option>
-                <option>Buah</option>
+                <option>Kepala</option>
+                <option>Badan</option>
+                <option>Kaki</option>
+                <option>Lain-lain</option>
   		</select>
                     
 				</div>

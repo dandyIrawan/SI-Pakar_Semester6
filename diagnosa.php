@@ -61,7 +61,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                echo  "<br><label>AKAR</label><br>";
+                echo  "<br><label>KEPALA</label><br>";
  			$tampil="select * from gejala where daerah='akar' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
@@ -72,7 +72,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                       echo  "<br><label>BATANG</label><br>";
+                       echo  "<br><label>BADAN</label><br>";
  			$tampil="select * from gejala where daerah='batang' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
@@ -84,7 +84,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                     echo  "<br><label>DAUN</label><br>";
+                     echo  "<br><label>KAKI</label><br>";
  			$tampil="select * from gejala where daerah='daun' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
@@ -95,7 +95,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                      echo  "<br><label>BUAH/UMBI</label><br>";
+                      echo  "<br><label>LAIN-LAIN</label><br>";
  			$tampil="select * from gejala where daerah='Buah/Umbi' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
@@ -103,28 +103,8 @@ header("location: about.php");
 			}
                   }
 					?>           
- 			<?php 
-            if(isset($_POST['penyakitt']))
-                  if($_POST['penyakitt']!="jenispenyakit"){
-                      echo  "<br><label>BUNGA</label><br>";
- 			$tampil="select * from gejala where daerah='bunga' and jenispenyakit= \"".$_POST['penyakitt']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>            
- 			<?php 
-            if(isset($_POST['tpenyakitt']))
-                  if($_POST['penyakitt']!="jenispenyakit"){
-                      echo  "<br><label>BIJI</label><br>";
- 			$tampil="select * from gejala where daerah='biji' and jenispenyakit= \"".$_POST['penyakitt']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
+ 			           
+ 		
         
         <br>
         <button type="submit" name ="submit" onclick="return checkDiagnosa()" class="btn btn-primary">CEK PENYAKIT</button><br><br>
@@ -193,7 +173,7 @@ header("location: about.php");
               <label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
               <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
             </div>
-              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"><span class="glyphicon glyphicon-off"></span> Login</button>
+              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"> Login</button>
           </form>
         </div>
       </div>
