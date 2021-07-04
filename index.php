@@ -47,7 +47,7 @@ header("location: about.php");
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
       <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
-      <p><button type="button" class="btn btn-succes btn-block" id="myBtn">LOGIN</button></p>
+      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
     </div>
     <div class="col-sm-8 text-left" > 
       <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
