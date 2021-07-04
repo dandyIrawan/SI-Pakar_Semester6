@@ -49,12 +49,12 @@ include "session.php";
 				<label for="sel1">Jenis Penyakit</label>            
 				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Sel darah</option>
+                <option>Trombosit</option>
   		</select>
               </form>
         <br><form id="form1" name="form1" method="post">
-				<label for="sel1">penyakitt</label>            
+				<label for="sel1">Penyakit</label>            
 				<select class="form-control" name="penyakit">
 				<option>Penyakit</option>
                <?php 
@@ -187,7 +187,7 @@ include "session.php";
 </div>
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 </body>

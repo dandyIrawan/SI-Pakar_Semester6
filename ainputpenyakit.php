@@ -79,8 +79,8 @@ header("location: about.php");
 				<div class="col-sm-10">           
 				<select class="form-control" name="jenispenyakit" onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Sel darah</option>
+                <option>Trombosit</option>
   		        </select>
                     
                     
@@ -137,7 +137,7 @@ header("location: about.php");
 </div>
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 </body>

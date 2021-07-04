@@ -182,7 +182,7 @@ header("location: about.php");
     </div>
   </div> 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 <script>
 $(document).ready(function(){

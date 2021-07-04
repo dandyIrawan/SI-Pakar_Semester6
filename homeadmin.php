@@ -44,7 +44,7 @@ include "session.php";
       <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-       <center><h2>SISTEM PAKAR DIAGNOSA HAMA DAN PENYAKIT TANAMAN BAWANG MERAH DAN CABAI
+       <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
       <p>Selamat datang <?php echo $login_session; ?>.Silahkan pilih menu yang diinginkan</p>
     </div>
@@ -52,7 +52,7 @@ include "session.php";
 </div>
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 </body>

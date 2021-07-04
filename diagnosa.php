@@ -52,8 +52,8 @@ header("location: about.php");
 				<label for="sel1">Jenis Penyakit</label>            
 				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Sel darah</option>
+                <option>Trombosit</option>
   		</select>
               </form>
        <br>     
@@ -200,7 +200,7 @@ header("location: about.php");
     </div>
   </div> 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){

@@ -47,7 +47,7 @@ header("location: about.php");
       <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h2 class="text-center">DETAIL HAMA DAN PENYAKIT</h2>
+      <h2 class="text-center">DETAIL PENYAKIT</h2>
       <div class="form-group"  method="POST">
       			<br><label class="control-label col-sm-2">ID :</label>
       		<div class="col-sm-10">
@@ -182,7 +182,7 @@ header("location: about.php");
     </div>
   </div> 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 <script>
 $(document).ready(function(){
