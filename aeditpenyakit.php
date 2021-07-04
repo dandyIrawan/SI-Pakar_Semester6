@@ -43,7 +43,7 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
@@ -51,7 +51,7 @@ header("location: about.php");
     </div>
     <div class="col-sm-8 text-left"> 
         
-      <h2 class="text-center">EDIT HAMA DAN PENYAKIT</h2>
+      <h2 class="text-center">EDIT PENYAKIT</h2>
     <form method="post">
       <div class="form-group">
       			<br><label class="control-label col-sm-2">ID :</label>
@@ -87,7 +87,7 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' name='jenistanaman' value='".$data['jenistanaman']."' data-error='Isi kolom dengan benar'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' name='jenispenyakit' value='".$data['jenispenyakit']."' data-error='Isi kolom dengan benar'><br>";
                     }
                 ?>
      		 </div>
@@ -100,9 +100,9 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' readonly value='".$data['gejala']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value='".$data['gejala']."'><br>";
                     }
-                echo "<input type='text'  class='form-control' id='jenistanaman' readonly value=''><br>";
+                echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value=''><br>";
                 ?>
      		 </div>
         </div>	
@@ -163,12 +163,12 @@ header("location: about.php");
                     if(isset($_POST['submit'])){
                       $id = $_GET['id'];
                       $namapenyakit = $_POST['namapenyakit'];
-                      $jenistanaman = $_POST['jenistanaman'];
+                      $jenispenyakit = $_POST['jenispenyakit'];
                       $kulturteknis = $_POST['kulturteknis'];
                       $fisikmekanis = $_POST['fisikmekanis'];
                       $kimiawi = $_POST['kimiawi'];
                       $hayati = $_POST['hayati'];     
-                      $query="update penyakit SET namapenyakit='".$_POST['namapenyakit']."', jenistanaman='".$_POST['jenistanaman']."', kulturteknis='".$_POST['kulturteknis']."', fisikmekanis='".$_POST['fisikmekanis']."', kimiawi='".$_POST['kimiawi']."', hayati='".$_POST['hayati']."' WHERE idpenyakit='$id'";
+                      $query="update penyakit SET namapenyakit='".$_POST['namapenyakit']."', jenispenyakit='".$_POST['jenispenyakit']."', kulturteknis='".$_POST['kulturteknis']."', fisikmekanis='".$_POST['fisikmekanis']."', kimiawi='".$_POST['kimiawi']."', hayati='".$_POST['hayati']."' WHERE idpenyakit='$id'";
                       mysqli_query($konek_db, $query);
                     }
                 ?>

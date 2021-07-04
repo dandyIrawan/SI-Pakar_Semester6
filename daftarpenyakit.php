@@ -49,9 +49,9 @@ header("location: about.php");
     <div class="col-sm-8 text-left"> 
       <h2 class="text-center">DAFTAR PENYAKIT</h2>
       <form id="form1" name="form1" method="post" action="daftarpenyakit.php">
-				<label for="sel1">Jenis Tanaman</label>            
-				<select class="form-control" name="tanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+				<label for="sel1">Jenis Penyakit</label>            
+				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
+				<option>Penyakit</option>
                 <option>Bawang</option>
                 <option>Cabai</option>
   		</select>
@@ -64,15 +64,15 @@ header("location: about.php");
                         <tr>
                             <th>NO</th>
                             <th>ID Penyakit</th>
-							<th>Nama Penyakit</th>
-                            <th>Jenis Tanaman</th>
+						              	<th>Nama Penyakit</th>
+                            <th>Jenis Penyakit</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
                      <?php
-if(isset($_POST['tanaman']))
-                    if($_POST['tanaman']!="jenistanaman"){
-$queri="Select * From penyakit where jenistanaman = \"".$_POST['tanaman']."\"";
+if(isset($_POST['penyakitt']))
+                    if($_POST['penyakitt']!="jenispenyakit"){
+$queri="Select * From penyakit where jenispenyakit = \"".$_POST['penyakitt']."\"";
 $hasil=mysqli_query ($konek_db,$queri);   
 $id = 0;
 while ($data = mysqli_fetch_array ($hasil)){  

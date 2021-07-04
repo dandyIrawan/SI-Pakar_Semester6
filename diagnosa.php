@@ -49,9 +49,9 @@ header("location: about.php");
     <div class="col-sm-8 text-left"> 
       <center><h2>DIAGNOSA PENYAKIT</h2></center>
         <form id="form1" name="form1" method="post" action="diagnosa.php">
-				<label for="sel1">Jenis Tanaman</label>            
-				<select class="form-control" name="tanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+				<label for="sel1">Jenis Penyakit</label>            
+				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
+				<option>Penyakit</option>
                 <option>Bawang</option>
                 <option>Cabai</option>
   		</select>
@@ -59,10 +59,10 @@ header("location: about.php");
        <br>     
         <form id="form2" name="form2" method="post" action="diagnosa.php">
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['penyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                 echo  "<br><label>AKAR</label><br>";
- 			$tampil="select * from gejala where daerah='akar' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='akar' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -70,10 +70,10 @@ header("location: about.php");
                   }
 					?>      
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['penyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                        echo  "<br><label>BATANG</label><br>";
- 			$tampil="select * from gejala where daerah='batang' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='batang' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -82,10 +82,10 @@ header("location: about.php");
 					?>
                   
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['penyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                      echo  "<br><label>DAUN</label><br>";
- 			$tampil="select * from gejala where daerah='daun' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='daun' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -93,10 +93,10 @@ header("location: about.php");
                   }
 					?>           
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['penyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                       echo  "<br><label>BUAH/UMBI</label><br>";
- 			$tampil="select * from gejala where daerah='Buah/Umbi' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='Buah/Umbi' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -104,10 +104,10 @@ header("location: about.php");
                   }
 					?>           
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['penyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                       echo  "<br><label>BUNGA</label><br>";
- 			$tampil="select * from gejala where daerah='bunga' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='bunga' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -115,10 +115,10 @@ header("location: about.php");
                   }
 					?>            
  			<?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
+            if(isset($_POST['tpenyakitt']))
+                  if($_POST['penyakitt']!="jenispenyakit"){
                       echo  "<br><label>BIJI</label><br>";
- 			$tampil="select * from gejala where daerah='biji' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='biji' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -137,8 +137,8 @@ header("location: about.php");
                         <tr>
                             <th>NO</th>
                             <th>ID PENYAKIT</th>
-							<th>Nama Penyakit</th>
-                            <th>Jenis Tanaman</th>
+						              	<th>Nama Penyakit</th>
+                            <th>Jenis Penyakit</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
@@ -147,7 +147,7 @@ header("location: about.php");
             $gejala = $_POST['gejala'];
             $jumlah_dipilih = count($gejala);
            for($x=0;$x<$jumlah_dipilih;$x++){
-                       $tampil ="select DISTINCT p.idpenyakit, p.namapenyakit, p.jenistanaman from basispengetahuan b, penyakit p where b.gejala='$gejala[$x]' and p.namapenyakit=b.namapenyakit group by namapenyakit";
+                       $tampil ="select DISTINCT p.idpenyakit, p.namapenyakit, p.jenispenyakit from basispengetahuan b, penyakit p where b.gejala='$gejala[$x]' and p.namapenyakit=b.namapenyakit group by namapenyakit";
                        $result = mysqli_query($konek_db, $tampil);
                        $hasil  = mysqli_fetch_array($result);   
                     
@@ -157,7 +157,7 @@ header("location: about.php");
         			             <td>".$x."</td>
                                  <td>".$hasil['idpenyakit']."</td>
 					             <td>".$hasil['namapenyakit']."</td>  
-                                 <td>".$hasil['jenistanaman']."</td> 
+                                 <td>".$hasil['jenispenyakit']."</td> 
                                  <td><a href=\"hasildiagnosa.php?id=".$hasil['idpenyakit']."\"><i class='glyphicon glyphicon-search'></i></a></td>
         		          </tr>   
                                

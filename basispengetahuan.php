@@ -42,7 +42,7 @@ $(document).ready( function () {
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block active">BASIS PENGETAHUAN</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
@@ -51,9 +51,9 @@ $(document).ready( function () {
     <div class="col-sm-8 text-left"> 
         <h2 class="text-center">BASIS PENGETAHUAN</h2>
          <form id="form1" name="form1" method="post" action="basispengetahuan.php">
-				<label for="sel1">Jenis Tanaman</label>            
-				<select class="form-control" name="tanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+				<label for="sel1">Jenis Penyakit</label>            
+				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
+				<option>Penyakit</option>
                 <option>Bawang</option>
                 <option>Cabai</option>
   		</select>
@@ -69,15 +69,15 @@ $(document).ready( function () {
                         <tr>
                             <th>NO</th>
                             <th>Id Penyakit</th>
-							<th>Nama Penyakit</th>
+						              	<th>Nama Penyakit</th>
                             <th>Gejala</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
                      <?php
-                    if(isset($_POST['tanaman']))
-                    if($_POST['tanaman']!="jenistanaman"){
-                            $queri="Select p.idpenyakit, p.jenistanaman, b.namapenyakit, b.gejala from basispengetahuan b, penyakit p where p.namapenyakit=b.namapenyakit and p.jenistanaman=\"".$_POST['tanaman']."\"";
+                    if(isset($_POST['penyakitt']))
+                    if($_POST['penyakitt']!="jenispenyakit"){
+                            $queri="Select p.idpenyakit, p.jenispenyakit, b.namapenyakit, b.gejala from basispengetahuan b, penyakit p where p.namapenyakit=b.namapenyakit and p.jenispenyakit=\"".$_POST['penyakitt']."\"";
                     $hasil=mysqli_query ($konek_db,$queri);   
                     $id = 0;
                         

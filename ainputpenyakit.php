@@ -47,14 +47,14 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
       <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
     </div>
     <div class="col-sm-8 text-left">
-        <h2 class="text-center">INPUT HAMA DAN PENYAKIT</h2>
+        <h2 class="text-center">INPUT PENYAKIT</h2>
       <form class="form-horizontal" method="post" data-toggle="validator" role="form" action="ainputpenyakit.php">
           
           <div class="form-group has-feedback">
@@ -75,10 +75,10 @@ header("location: about.php");
 				</div>
 			</div>
 			<div class="form-group ">
-				<label class="control-label col-sm-2"  for="alamat">Jenis Tanaman:</label>
+				<label class="control-label col-sm-2"  for="alamat">Jenis Penyakit:</label>
 				<div class="col-sm-10">           
-				<select class="form-control" name="jenistanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+				<select class="form-control" name="jenispenyakit" onChange='this.form.submit();'>
+				<option>Penyakit</option>
                 <option>Bawang</option>
                 <option>Cabai</option>
   		        </select>
@@ -117,12 +117,12 @@ header("location: about.php");
                     
                     $idpenyakit     = $_POST['idpenyakit'];
                     $namapenyakit   = $_POST['namapenyakit'];
-                    $jenistanaman   = $_POST['jenistanaman'];
+                    $jenispenyakit   = $_POST['jenispenyakit'];
                     $kulturteknis   = $_POST['kulturteknis'];
                     $fisikmekanis   = $_POST['fisikmekanis'];
                     $kimiawi        = $_POST['kimiawi'];
                     $hayati         = $_POST['hayati'];
-                    $query="INSERT INTO penyakit SET idpenyakit='$idpenyakit',namapenyakit='$namapenyakit',jenistanaman='$jenistanaman',kulturteknis='$kulturteknis', fisikmekanis='$fisikmekanis',kimiawi='$kimiawi',hayati='$hayati'";
+                    $query="INSERT INTO penyakit SET idpenyakit='$idpenyakit',namapenyakit='$namapenyakit',jenispenyakit='$jenispenyakit',kulturteknis='$kulturteknis', fisikmekanis='$fisikmekanis',kimiawi='$kimiawi',hayati='$hayati'";
                    $result=mysqli_query($konek_db, $query);
                         if($result){
                             echo '<script language="javascript">';

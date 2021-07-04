@@ -43,18 +43,18 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block active">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>  
       <br><br><br><br><br><br><br><br><br><br>
       <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-           <h2 class="text-center">DAFTAR HAMA DAN PENYAKIT</h2>
+           <h2 class="text-center">DAFTAR PENYAKIT</h2>
       <form id="form1" name="form1" method="post" action="hamadanpenyakit.php">
-				<label for="sel1">Jenis Tanaman</label>            
-				<select class="form-control"  name="tanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+				<label for="sel1">Jenis Penyakit</label>            
+				<select class="form-control"  name="penyakitt" onChange='this.form.submit();'>
+				<option>Penyakit</option>
                 <option>Bawang</option>
                 <option>Cabai</option>
   		</select>
@@ -70,15 +70,15 @@ header("location: about.php");
                         <tr>
                             <th>NO</th>
                             <th>ID Penyakit</th>
-							<th>Nama Penyakit</th>
+						              	<th>Nama Penyakit</th>
                             <th>Jenis Penyakit</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
                      <?php
-if(isset($_POST['tanaman']))
-if($_POST['tanaman']!="jenistanaman"){	
-$queri="Select * From penyakit where jenistanaman = \"".$_POST['tanaman']."\"";
+if(isset($_POST['penyakitt']))
+if($_POST['penyakitt']!="jenispenyakit"){	
+$queri="Select * From penyakit where jenispenyakit = \"".$_POST['penyakitt']."\"";
 $hasil=mysqli_query ($konek_db,$queri);   
 $id = 0;
 while ($data = mysqli_fetch_array ($hasil)){  

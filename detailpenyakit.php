@@ -82,7 +82,7 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' readonly value='".$data['jenistanaman']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value='".$data['jenispenyakit']."'><br>";
                     }
                 ?>
      		 </div>
@@ -95,9 +95,9 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' readonly value='".$data['gejala']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value='".$data['gejala']."'><br>";
                     }
-                echo "<input type='text'  class='form-control' id='jenistanaman' readonly value=''><br>";
+                echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value=''><br>";
                 ?>
      		 </div>
         </div>	

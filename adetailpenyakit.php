@@ -47,7 +47,7 @@ header("location: about.php");
       <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h2 class="text-center">DETAIL HAMA DAN PENYAKIT</h2>
+      <h2 class="text-center">DETAIL PENYAKIT</h2>
       <div class="form-group"  method="POST">
       			<br><label class="control-label col-sm-2">ID :</label>
       		<div class="col-sm-10">
@@ -82,7 +82,7 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' readonly value='".$data['jenistanaman']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value='".$data['jenispenyakit']."'><br>";
                     }
                 ?>
      		 </div>
@@ -95,9 +95,9 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' readonly value='".$data['gejala']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value='".$data['gejala']."'><br>";
                     }                                           
-                 echo "<input type='text'  class='form-control' id='jenistanaman' readonly value=''><br>";
+                 echo "<input type='text'  class='form-control' id='jenispenyakit' readonly value=''><br>";
                 ?>
      		 </div>
         </div>	
