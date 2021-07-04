@@ -42,14 +42,14 @@ header("location: about.php");
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="index.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
-      <p><a href="diagnosa.php"><button type="button" class="btn btn-primary btn-block">DIAGNOSA PENYAKIT</button></a></p>
-      <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-primary btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-primary btn-block">ABOUT</button></a></p>
+      <p><a href="index.php"><button type="button" class="btn btn-succes btn-block active">BERANDA</button></a></p>
+      <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block">DIAGNOSA PENYAKIT</button></a></p>
+      <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
+      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
-      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
+      <p><button type="button" class="btn btn-succes btn-block" id="myBtn">LOGIN</button></p>
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left" > 
       <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
         <div class="panel panel-info">
@@ -87,7 +87,7 @@ header("location: about.php");
               <label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
               <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
             </div>
-              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"> Login</button>
+              <button type="submit" id="submit" nama="submit" class="btn btn-succes btn-block" method="post"> Login</button>
           </form>     
             
         </div>
@@ -100,7 +100,7 @@ header("location: about.php");
   </div> 
 
 <footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
+</br></br> <p>Teknik Informatika - Politeknik Negeri Jember</p></br>
   <p></p>
 </footer>
 
