@@ -47,9 +47,12 @@ header("location: about.php");
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
       <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
       <br><br><br><br><br><br><br><br>
-      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
-      <p>  <a href="welcome.php"><button type="button" class="btn btn-primary btn-block">KEMBALI</button></p>
+      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
+      <p><a href="index.php"><button type="button" class="btn btn-primary btn-block">KEMBALI</button></a></p>
+    
     </div>
+    
+    
     <div class="col-sm-8 text-left" > 
       <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
@@ -76,7 +79,7 @@ header("location: about.php");
       <div class="modal-content">
         <div class="modal-header" style="padding:35px 50px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login Admin</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
           <form role="form" method="post" action="ceklogin.php">
