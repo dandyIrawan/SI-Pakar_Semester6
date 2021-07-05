@@ -5,11 +5,18 @@
         <title>login</title>
        
         <link href="css/login.css" rel="stylesheet" />
+   
+    <style>
+            body{
+            background:#212529; 
+            }
+            </style>
     </head>
-    <body>
     
+    <body>
+    </br></br></br></br></br></br>
             <div class="login-card">
-            <h1>Log-in</h1><br>
+            <h1>Silahkan Login</h1><br>
             <div><font color="red" size="3">
         <a href="login.php" class="close">&times;</a>
         Username dan Password salah </p>
