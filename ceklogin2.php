@@ -14,7 +14,7 @@ $result = $konek_db->query($query) or die($konek_db->error.__LINE__);
     if($result->num_rows > 0) {
               session_start();
               $_SESSION['login_user']=$username;
-              header('location:index.php');
+              header('location:welcome.php');
         }
     else {
         header('location:salahlogin2.php');

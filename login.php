@@ -23,7 +23,7 @@
         </form>
             
         <div class="login-help">
-            <a href="welcome.php">Kembali</a>
+            <a href="index.php">Kembali</a>
         </div>
         </div>
        
