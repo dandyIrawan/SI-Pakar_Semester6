@@ -180,7 +180,7 @@ header("location: about.php");
     </div>
   </div> 
 <footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
+</br></br> <p>Teknik Informatika - Politeknik Negeri Jember</p></br>
 </footer>
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){

@@ -79,7 +79,7 @@
     </div>
   </div> 
 <footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
+</br></br> <p>Teknik Informatika - Politeknik Negeri Jember</p></br>
 </footer>
 <script>
 $(document).ready(function(){
