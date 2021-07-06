@@ -43,12 +43,11 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="penyakit.php"><button type="button" class="btn btn-primary btn-block">PENYAKIT</button></a></p>
-      <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block active">GEJALA</button></a></p>
-      <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>
+      <p><a href="penyakit.php"><button type="button" class="btn btn-succes btn-block">PENYAKIT</button></a></p>
+      <p><a href="gejala.php"><button type="button" class="btn btn-succes btn-block active">GEJALA</button></a></p>
+      <p><a href="basispengetahuan.php"><button type="button" class="btn btn-succes btn-block">BASIS PENGETAHUAN</button></a></p>
         <br><br><br><br><br><br><br><br><br><br>
-      <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
-    </div>
+      </div>
     <div class="col-sm-8 text-left"> 
           <h2 class="text-center">DAFTAR GEJALA</h2>
       <form id="form1" name="form1" method="post" action="gejala.php">

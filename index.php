@@ -22,9 +22,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Petunjuk</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Penyakit</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Petunjuk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#penyakit">Penyakit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,8 +38,8 @@
                             <h1 class="display-5 fw-bolder text-white mb-2">SISTEM PAKAR</h1>
                             <p class="lead text-white-50 mb-4">DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="login.php">Start Login</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="login.php">Masuk</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Info</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             </div>
         </section>
         <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom">
+        <section class="bg-light py-5 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Pay as you grow</h2>
@@ -237,11 +237,11 @@
             </div>
         </section>
         <!-- Testimonials section-->
-        <section class="py-5 border-bottom">
+        <section class="py-5 border-bottom" id="kontak">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Customer testimonials</h2>
-                    <p class="lead mb-0">Our customers love working with us</p>
+                    <h2 class="fw-bolder">Tim Pengembang</h2>
+                    <p class="lead mb-0">Development Team</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
@@ -251,8 +251,9 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
                                     <div class="ms-4">
-                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
+                                        <p class="mb-1">Ahmad Dandi Irawan</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
                                     </div>
                                 </div>
                             </div>
@@ -263,12 +264,38 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
                                     <div class="ms-4">
-                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
+                                        <p class="mb-1">Muhammad Ansori</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Taufiq Hariyanto</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Kurnia Juansyah M</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
