@@ -3,7 +3,7 @@
 $host = 'localhost';  
   $user = 'root';        
   $password = '';        
-  $database = 'sbp';    
+  $database = 'sip';    
       
   $konek_db = mysqli_connect($host, $user, $password, $database);      
 ?>

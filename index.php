@@ -1,116 +1,359 @@
-<?php
-include('koneksi.php');
- 
-if(isset($_SESSION['login_user'])){
-header("location: about.php");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Sistem Pakar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          
-          
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="index.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
-      <p><a href="diagnosa.php"><button type="button" class="btn btn-primary btn-block">DIAGNOSA PENYAKIT</button></a></p>
-      <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-primary btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-primary btn-block">ABOUT</button></a></p>
-      <br><br><br><br><br><br><br><br><br><br>
-      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
-</h2></center><br>
-        <div class="panel panel-info">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <p align=justify>Penyakit mieloproliferatif (biasa dikenal neoplasma mieloproliferatif) merupakan sekelompok penyakit kanker darah langka dimana kelebihan sel darah merah, 
-                    sel darah putih atau trombosit diproduksi di sumsung tulang. Myelo mengacu pada sumsung tulang, prolifetarif menggambarkan pertumbuhan sel darah yang cepat dan neoplasama 
-                    menggambarkan pertumbuhan yang tidak normal. Ada beberapa jenis penyakit yakni penyakit polisitemia vera (PV), trombositemia esensial (TE), mielofibrosis idiopatik kronik 
-                    dengan metaplasia mieloid / MMM, sindroma hipereosinofilik/ SHE. Sementara klasifikasi WHO menyatakan bahwa leukemia mielogenous kronik / LMK dan leukemia netrofilik kronik
-                    juga termasuk dalam kriteria kelompok penyakit ini.</p> <p>Dari latar belakang tersebut maka diperlukan sebuah sitem identifikasi berdasarkan sel darah untuk membantu pihak	
-                    medis	dalam	mendeteksi dini pada penyakit myeloproliferative syndrome.</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sistem Pakar</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">SI Pakar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Penyakit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#penyakit">Petunjuk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Lainnya</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="padding:35px 50px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-        </div>
-        <div class="modal-body" style="padding:40px 50px;">
-          <form role="form" method="post" action="ceklogin.php">
-            <div class="form-group" method="post">
-              <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" name="username" id="password" placeholder="Enter username">
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">SISTEM PAKAR</h1>
+                            <p class="lead text-white-50 mb-4">DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="login.php">Masuk</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group" method="post">
-              <label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-              <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+        </header>
+        <!-- Features section-->
+        <section class="py-5 border-bottom" id="features">
+          <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Penyakit Mieloproliferatif</h2>
+                    <p class="lead mb-0">Myeloproliferative Syndrome</p>
+                </div>
+                <p>
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Leukemia mielositik kronik</h2>
+                        <p>Kanker indolen yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.</p>
+                        <a class="text-decoration-none" href="#!">
+                            Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Polycythemia vera</h2>
+                        <p>Kadar sel darah merah tinggi, baik pada sumsum tulang maupun darah, sehingga darah menjadi lebih kental.</p>
+                        <a class="text-decoration-none" href="#!">
+                        Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Mielofibrosis</h2>
+                        <p>Kondisi di mana banyak terdapat sel darah merah dan sel darah putih yang tidak sempurna di dalam tubuh.</p>
+                        <a class="text-decoration-none" href="#!">
+                        Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    </p></p></p> </p> </p>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Trombositemia esensial</h2></br>
+                        <p>Terjadi peningkatan jumlah trombosit atau platelet di dalam darah.</p>
+                        <a class="text-decoration-none" href="#!"></br>
+                        Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                  
+                    
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Chronic neutrophilic leukemia</h2>
+                        <p>Darah pasien banyak mengandung sel darah putih yang disebut neutrofil.</p>
+                        <a class="text-decoration-none" href="#!"></br>
+                        Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Chronic eosinophilic leukemia</h2>
+                        <p>Terdapat banyak jenis sel darah putih yang disebut eosinofil pada sumsum tulang, darah, dan jaringan tubuh lain.</p>
+                        <a class="text-decoration-none" href="#!">
+                        Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    </p>
+                </div>
             </div>
-              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"><span class="glyphicon glyphicon-off"></span> Login</button>
-          </form>     
-            
-        </div>
-      </div>
-        
-        
-   
-        
-    </div>
-  </div> 
+        </section>
+        <!-- Pricing section-->
+        <section class="bg-light py-5 border-bottom" id="penyakit">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Petunjuk</h2>
+                    <p class="lead mb-0">Instructions</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Pricing card free-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Pengunjung</div>
+                                </br>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>1 users</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        5GB storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Unlimited public projects
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Community access
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Unlimited private projects
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Dedicated support
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Free linked domain
+                                    </li>
+                                    <li class="text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Monthly status reports
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card pro-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold">
+                                    Petugas
+                                </div>
+                                </br>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>5 users</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        5GB storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Unlimited public projects
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Community access
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Unlimited private projects
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Dedicated support
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Free linked domain
+                                    </li>
+                                    <li class="text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Monthly status reports
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card enterprise-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    Admin 
+                                </div></br>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Unlimited users</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        5GB storage
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Unlimited public projects
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Community access
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Unlimited private projects
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Dedicated support
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Unlimited</strong>
+                                        linked domains
+                                    </li>
+                                    <li class="text-muted">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Monthly status reports
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom" id="kontak">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Tim Pengembang</h2>
+                    <p class="lead mb-0">Development Team</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- Testimonial 2-->
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-person-fill"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Ahmad Dandi Irawan</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2-->
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-person"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Muhammad Ansori</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-person-fill"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Taufiq Hariyanto</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-person"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Kurnia Juansyah M</p>
+                                        <div class="small text-muted">E41180087 - Teknik Informatika</div>
+                                        <div class="small text-muted">Politeknik Negeri Jember</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class=""><b><i class="bi bi-whatsapp">  +62 852 3110 5339</b></i></div>
+                                
+                                </div>
+                            </div>
+                        </div>
 
-<footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
-  <p></p>
-</footer>
-
-<script>
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-});
-</script>
-
-</body>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+       
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">&copy;Sistem Pakar - Politeknik Negeri Jember 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>

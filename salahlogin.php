@@ -42,7 +42,7 @@ header("location: about.php");
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="index.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
+      <p><a href="welcome.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
       <p><a href="diagnosa.php"><button type="button" class="btn btn-primary btn-block">DIAGNOSA PENYAKIT</button></a></p>
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-primary btn-block">DAFTAR PENYAKIT</button></a></p>
       <p><a href="about.php"><button type="button" class="btn btn-primary btn-block">ABOUT</button></a></p>
@@ -50,7 +50,7 @@ header("location: about.php");
       <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <center><h2>SISTEM PAKAR DIAGNOSA HAMA DAN PENYAKIT TANAMAN BAWANG MERAH DAN CABAI
+      <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
     <div class="alert alert-danger alert-dismissible" id="alert">
         <a href="index.php" class="close">&times;</a>
@@ -59,7 +59,12 @@ header("location: about.php");
         <div class="panel panel-info">
                 <div class="panel-heading"></div>
                 <div class="panel-body">
-                    <p align=justify>Di Indonesia tanaman bawang dan cabai adalah salah satu jenis tanaman hortikultura yang secara luas dibudidayakan. Akan tetapi, jika dilihat dari hasil panen yang dihasilkan masih belum memuaskan. Hal ini disebabkan oleh berbagai faktor, diantaranya yaitu teknik budidaya, kondisi lingkungan dan hama penyakit. Dari ketiga faktor, faktor yang paling bermasalah sampai saat ini adalah hama dan penyakit.Masalahnya sering ditemui bahwa petani yang minim akan pengetahuaan mengenai penyakit yang menyerang tanaman mereka, ditambah lagi keterbatasan seorang ahli kadang-kadang menjadi kendala bagi petani yang akan melakukan konsultasi untuk menyelesaikan masalah dan mendapatkan solusi terbaik. Diharapka sistem pakar simulasi diagnosa hama dan penyakit tanaman bawang dan cabai dibuat bertujuan untuk sebagai sarana konsultasi, sarana belajar di suatu instansi dan dapat digunakan sebagai alat yang digunakan untuk mendiagnosa dan mensosialisasikan jenis hama dan penyakit.</p>
+                    <p align=justify>Penyakit mieloproliferatif (biasa dikenal neoplasma mieloproliferatif) merupakan sekelompok penyakit kanker darah langka dimana kelebihan sel darah merah, 
+                    sel darah putih atau trombosit diproduksi di sumsung tulang. Myelo mengacu pada sumsung tulang, prolifetarif menggambarkan pertumbuhan sel darah yang cepat dan neoplasama 
+                    menggambarkan pertumbuhan yang tidak normal. Ada beberapa jenis penyakit yakni penyakit polisitemia vera (PV), trombositemia esensial (TE), mielofibrosis idiopatik kronik 
+                    dengan metaplasia mieloid / MMM, sindroma hipereosinofilik/ SHE. Sementara klasifikasi WHO menyatakan bahwa leukemia mielogenous kronik / LMK dan leukemia netrofilik kronik
+                    juga termasuk dalam kriteria kelompok penyakit ini.</p> <p>Dari latar belakang tersebut maka diperlukan sebuah sitem identifikasi berdasarkan sel darah untuk membantu pihak	
+                    medis	dalam	mendeteksi dini pada penyakit myeloproliferative syndrome.</p>
             </div>
         </div>
       
@@ -86,7 +91,7 @@ header("location: about.php");
               <label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
               <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
             </div>
-              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"><span class="glyphicon glyphicon-off"></span> Login</button>
+              <button type="submit" id="submit" nama="submit" class="btn btn-primary btn-block" method="post"> Login</button>
           </form>     
             
         </div>
@@ -99,7 +104,7 @@ header("location: about.php");
   </div> 
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 <script>

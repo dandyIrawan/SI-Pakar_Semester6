@@ -45,7 +45,7 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="penyakit.php"><button type="button" class="btn btn-primary btn-block">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block active">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
@@ -75,22 +75,21 @@ header("location: about.php");
 				<div class="col-sm-10">           
 				<select class="form-control" name="daerah"  onChange='this.form.submit();'>
 				<option>Daerah</option>
-                <option>Akar</option>
-                <option>Batang</option>
-                <option>Daun</option>
-                <option>Bunga</option>
-                <option>Buah</option>
+                <option>Kepala</option>
+                <option>Badan</option>
+                <option>Kaki</option>
+                <option>Lain-lain</option>
   		</select>
                     
 				</div>
 			</div>	
           <div class="form-group ">
-				<label class="control-label col-sm-2" for="alamat">Jenis Tanaman:</label>
+				<label class="control-label col-sm-2" for="alamat">Jenis Penyakit:</label>
 				<div class="col-sm-10">
-					<select class="form-control" name="jenistanaman"  onChange='this.form.submit();'>
-				<option>Tanaman</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+					<select class="form-control" name="jenispenyakit"  onChange='this.form.submit();'>
+				<option>Penyakit</option>
+                <option>Sel darah</option>
+                <option>Trombosit</option>
   		</select>
                     
 				</div>
@@ -101,8 +100,8 @@ header("location: about.php");
                     $idgejala     = $_POST['idgejala'];
                     $gejala       = $_POST['gejala'];
                     $daerah       = $_POST['daerah'];
-                    $jenistanaman = $_POST['jenistanaman'];
-                    $query="INSERT INTO gejala SET idgejala='$idgejala',gejala='$gejala',daerah='$daerah',jenistanaman='$jenistanaman'";
+                    $jenispenyakit = $_POST['jenispenyakit'];
+                    $query="INSERT INTO gejala SET idgejala='$idgejala',gejala='$gejala',daerah='$daerah',jenispenyakit='$jenispenyakit'";
                   $result=mysqli_query($konek_db, $query);
                         if($result){
                             echo '<script language="javascript">';
@@ -117,7 +116,7 @@ header("location: about.php");
 </div>
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 </body>

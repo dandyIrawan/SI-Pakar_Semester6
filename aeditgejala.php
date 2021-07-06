@@ -44,7 +44,7 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
-      <p><a href="hamadanpenyakit.php"><button type="button" class="btn btn-primary btn-block">HAMA dan PENYAKIT</button></a></p>
+      <p><a href="penyakit.php"><button type="button" class="btn btn-primary btn-block">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-primary btn-block active">GEJALA</button></a></p>
       <p><a href="basispengetahuan.php"><button type="button" class="btn btn-primary btn-block">BASIS PENGETAHUAN</button></a></p>
       <br><br><br><br><br><br><br><br><br><br>
@@ -100,7 +100,7 @@ header("location: about.php");
                        $sql = mysqli_query ($konek_db,$tampil);
                        while($data = mysqli_fetch_array ($sql))
                     {
-                       echo "<input type='text'  class='form-control' id='jenistanaman' name='jenistanaman' value='".$data['jenistanaman']."'><br>";
+                       echo "<input type='text'  class='form-control' id='jenispenyakit' name='jenispenyakit' value='".$data['jenispenyakit']."'><br>";
                     }
                 ?>
      		 </div>
@@ -112,8 +112,8 @@ header("location: about.php");
                       $id = $_GET['id'];
                       $gejala       = $_POST['gejala'];
                       $daerah       = $_POST['daerah'];
-                      $jenistanaman = $_POST['jenistanaman'];
-                      $query="update gejala SET gejala='".$_POST['gejala']."', daerah='".$_POST['daerah']."', jenistanaman='".$_POST['jenistanaman']."' WHERE idgejala='$id'";
+                      $jenispenyakit = $_POST['jenispenyakit'];
+                      $query="update gejala SET gejala='".$_POST['gejala']."', daerah='".$_POST['daerah']."', jenispenyakit='".$_POST['jenispenyakit']."' WHERE idgejala='$id'";
                       mysqli_query($konek_db, $query);
                       header('location:gejala.php');
                     }
@@ -124,7 +124,7 @@ header("location: about.php");
 </div>
 
 <footer class="container-fluid text-center">
-  <p>S1-Sistem Informasi 2013</p>
+  <p>Teknik Informatika - Politeknik Negeri Jember</p>
 </footer>
 
 </body>
