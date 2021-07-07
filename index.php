@@ -125,49 +125,48 @@
                     <h2 class="fw-bolder">Petunjuk</h2>
                     <p class="lead mb-0">Instructions</p>
                 </div>
-                <div class="row gx-5 justify-content-center">
+                <div class="row gx-7 justify-content-center">
                     <!-- Pricing card free-->
                     <div class="col-lg-6 col-xl-4">
                         <div class="card mb-5 mb-xl-0">
                             <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Pengunjung</div>
+                                <div class="small text-uppercase fw-bold">Pengunjung</div>
                                 </br>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        <strong>1 users</strong>
+                                        Melihat informasi penyakit
+                                        </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Melihat cara kerja aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Community access
+                                        Melihat hak akses aplikasi
                                     </li>
                                     <li class="mb-2 text-muted">
                                         <i class="bi bi-x"></i>
-                                        Unlimited private projects
+                                        Login aplikasi
                                     </li>
                                     <li class="mb-2 text-muted">
                                         <i class="bi bi-x"></i>
-                                        Dedicated support
+                                        Diagnosa penyakit
                                     </li>
                                     <li class="mb-2 text-muted">
                                         <i class="bi bi-x"></i>
-                                        Free linked domain
+                                        Melihat daftar penyakit dan &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; gejala
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Registrasi petugas
                                     </li>
                                     <li class="text-muted">
                                         <i class="bi bi-x"></i>
-                                        Monthly status reports
+                                        Menambahkan data penyakit, &nbsp; &nbsp;&nbsp;&nbsp;gejala dan basis pengetahuan
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
+                                </div>
                         </div>
                     </div>
                     <!-- Pricing card pro-->
@@ -181,39 +180,37 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        <strong>5 users</strong>
+                                        Melihat informasi penyakit
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        5GB storage
+                                        Melihat cara kerja aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
+                                        Melihat hak akses aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Community access
+                                        Login aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited private projects
+                                        Diagnosa penyakit
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Dedicated support
-                                    </li>
+                                        Melihat daftar penyakit dan &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; gejala
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Free linked domain
+                                        Registrasi petugas
                                     </li>
                                     <li class="text-muted">
                                         <i class="bi bi-x"></i>
-                                        Monthly status reports
+                                        Menambahkan data penyakit, &nbsp; &nbsp;&nbsp;&nbsp;gejala dan basis pengetahuan
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
+                                </div>
                         </div>
                     </div>
                     <!-- Pricing card enterprise-->
@@ -227,39 +224,37 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited users</strong>
+                                        Melihat informasi penyakit
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        5GB storage
+                                        Melihat cara kerja aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
+                                        Melihat hak akses aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Community access
+                                        Login aplikasi
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited private projects
+                                        Diagnosa penyakit
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Dedicated support
+                                        Melihat daftar penyakit dan &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; gejala
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited</strong>
-                                        linked domains
+                                        Registrasi petugas
                                     </li>
-                                    <li class="text-muted">
+                                    <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Monthly status reports
+                                        Menambahkan data penyakit, &nbsp; &nbsp;&nbsp;&nbsp;gejala dan basis pengetahuan
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
                             </div>
                         </div>
                     </div>
