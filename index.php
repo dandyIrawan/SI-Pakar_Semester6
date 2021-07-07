@@ -52,19 +52,8 @@
                     <h2 class="fw-bolder">Penyakit Mieloproliferatif</h2>
                     <p class="lead mb-0">Myeloproliferative Syndrome</p>
                 </div>
-                <p>
-            <div class="container px-5 my-5">
+                <p> <div class="container px-5 my-5">
                 <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Leukemia mielositik kronik</h2>
-                        <p>Kanker indolen yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Baca lebih lanjut
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                    
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                         <h2 class="h4 fw-bolder">Polycythemia vera</h2>
@@ -83,18 +72,26 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                    </p></p></p> </p> </p>
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Trombositemia esensial</h2></br>
+                        <h2 class="h4 fw-bolder">Trombositemia esensial</h2>
                         <p>Terjadi peningkatan jumlah trombosit atau platelet di dalam darah.</p>
                         <a class="text-decoration-none" href="#!"></br>
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                  
-                    
+                    </p></p></p> </p> </p>
+                   
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Leukemia granulositik kronik</h2>
+                        <p>Kanker indolen yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.</p>
+                        <a class="text-decoration-none" href="penyakit4.php">
+                            Baca lebih lanjut
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                         <h2 class="h4 fw-bolder">Chronic neutrophilic leukemia</h2>
@@ -259,7 +256,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><center>
+            <img src="alur.jpg" class="img-fluid" width="1000px"></center>
         </section>
         <!-- Testimonials section-->
         <section class="py-5 border-bottom" id="kontak">
