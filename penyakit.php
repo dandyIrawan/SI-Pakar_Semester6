@@ -50,7 +50,7 @@ header("location: about.php");
       </div>
     <div class="col-sm-8 text-left"> 
            <h2 class="text-center">DAFTAR PENYAKIT</h2>
-      <form id="form1" name="form1" method="post" action="hamadanpenyakit.php">
+      <form id="form1" name="form1" method="post" action="penyakit.php">
 				<label for="sel1">Jenis Penyakit</label>            
 				<select class="form-control"  name="penyakitt" onChange='this.form.submit();'>
 				<option>Penyakit</option>

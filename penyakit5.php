@@ -18,8 +18,8 @@
 <section class="bg-light py-1 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bolder">Leukemia Granulositik Kronik</h2>
-                    <p class="lead mb-0">Chronic Myelogenous Leukemia</p>
+                    <h2 class="fw-bolder">Leukemia Neutrofilik Kronis</h2>
+                    <p class="lead mb-0">Chronic Neutrophilic Leukemia</p>
                 </div>
                 <div class="row gx-20 justify-content-center">
                     <!-- Pricing card free-->
@@ -31,22 +31,14 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <p align=justify>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia granulositik kronik (LGK) atau dalam bahasa Inggris
-                                        chronic myelogenous leukemia (CML) merupakan gangguan sel punca
-                                        klonal yang masuk dalam golongan myeloproliferative neoplasms (MPN).
-                                        Berbeda dengan leukemia akut, CML memiliki perjalanan penyakit yang
-                                        lebih panjang, gejala yang muncul bertahap lebih lama, dan bisa dikatakan
-                                        “lebih jinak”. Bahkan, saat ini dengan pengobatan target yaitu melalui
-                                        obat-obatan inhibitor tirosin kinase, CML saat ini telah menjadi penyakit
-                                        kronik yang dapat dikendalikan.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia neutrofilik kronis (CNL) adalah neoplasma mieloproliferatif langka yang menampilkan 
+                                        neutrofilia persisten dalam darah perifer, hiperplasia myeloid di sumsum tulang , 
+                                        hepatosplenomegali , dan tidak adanya kromosom Philadelphia atau gen fusi BCR/ABL .
                                         </br> </br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;CML / LGK merupakan penyakit sel punca hematopoiesis multipotensial yang dicirikan
-                                        dengan adanya anemia serta adanya granulositosis ekstrim, imaturitas granulositik,
-                                        basofilia, terkadang trombositosis, dan splenomegali. Sel hematopoietik yang
-                                        mengalami gangguan memiliki perubahan kromosom dimana terjadi translokasi
-                                        antara kromosom 9 dengan kromosom 22 pada 95% kasus. Translokasi ini memberikan
-                                        gambaran klasik dimana terdapat kromosom yang abnormal berupa bentuk pemendekan
-                                        kromosom 22 yang dikenal dengan kromosom Philadelphia. </br></br></br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Penyebab CNL saat ini tidak diketahui. Hubungan antara CNL dan multiple 
+                                        myeloma telah disarankan berdasarkan pengamatan myeloma pada 20% kasus CNL. Namun, kelainan genetik 
+                                        klonal belum terdeteksi dalam kasus CNL terkait myeloma ini, meningkatkan kemungkinan bahwa neutrofilia adalah reaksi karena sel myeloma neoplastik . 
+                                         Sel asal yang didalilkan adalah sel punca yang berasal dari sumsum dengan potensi terbatas. </br></br></br>
                                         </a>
                                         </p>
                                         </li>

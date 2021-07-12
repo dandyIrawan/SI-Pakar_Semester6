@@ -56,9 +56,9 @@
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Polycythemia vera</h2>
+                        <h2 class="h4 fw-bolder">Polisitemia Vera</h2>
                         <p>Kadar sel darah merah tinggi, baik pada sumsum tulang maupun darah, sehingga darah menjadi lebih kental.</p>
-                        <a class="text-decoration-none" href="#!">
+                        <a class="text-decoration-none" href="penyakit1.php">
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -67,16 +67,16 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                         <h2 class="h4 fw-bolder">Mielofibrosis</h2>
                         <p>Kondisi di mana banyak terdapat sel darah merah dan sel darah putih yang tidak sempurna di dalam tubuh.</p>
-                        <a class="text-decoration-none" href="#!">
+                        <a class="text-decoration-none" href="penyakit2.php">
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Trombositemia esensial</h2>
+                        <h2 class="h4 fw-bolder">Trombositemia Esensial</h2>
                         <p>Terjadi peningkatan jumlah trombosit atau platelet di dalam darah.</p>
-                        <a class="text-decoration-none" href="#!"></br>
+                        <a class="text-decoration-none" href="penyakit3.php"></br>
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -85,7 +85,7 @@
                    
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Leukemia granulositik kronik</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Granulositik Kronik</h2>
                         <p>Kanker indolen yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.</p>
                         <a class="text-decoration-none" href="penyakit4.php">
                             Baca lebih lanjut
@@ -94,9 +94,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Chronic neutrophilic leukemia</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Neutrofilik Kronis</h2>
                         <p>Darah pasien banyak mengandung sel darah putih yang disebut neutrofil.</p>
-                        <a class="text-decoration-none" href="#!"></br>
+                        <a class="text-decoration-none" href="penyakit5.php"></br>
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -104,9 +104,9 @@
                     
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Chronic eosinophilic leukemia</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Eosinofilik Kronis</h2>
                         <p>Terdapat banyak jenis sel darah putih yang disebut eosinofil pada sumsum tulang, darah, dan jaringan tubuh lain.</p>
-                        <a class="text-decoration-none" href="#!">
+                        <a class="text-decoration-none" href="penyakit6.php">
                         Baca lebih lanjut
                             <i class="bi bi-arrow-right"></i>
                         </a>

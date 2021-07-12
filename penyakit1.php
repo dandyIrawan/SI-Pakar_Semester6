@@ -18,8 +18,8 @@
 <section class="bg-light py-1 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bolder">Leukemia Granulositik Kronik</h2>
-                    <p class="lead mb-0">Chronic Myelogenous Leukemia</p>
+                    <h2 class="fw-bolder">Polisitemia Vera</h2>
+                    <p class="lead mb-0">Polycythemia Vera</p>
                 </div>
                 <div class="row gx-20 justify-content-center">
                     <!-- Pricing card free-->
@@ -31,22 +31,21 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <p align=justify>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia granulositik kronik (LGK) atau dalam bahasa Inggris
-                                        chronic myelogenous leukemia (CML) merupakan gangguan sel punca
-                                        klonal yang masuk dalam golongan myeloproliferative neoplasms (MPN).
-                                        Berbeda dengan leukemia akut, CML memiliki perjalanan penyakit yang
-                                        lebih panjang, gejala yang muncul bertahap lebih lama, dan bisa dikatakan
-                                        “lebih jinak”. Bahkan, saat ini dengan pengobatan target yaitu melalui
-                                        obat-obatan inhibitor tirosin kinase, CML saat ini telah menjadi penyakit
-                                        kronik yang dapat dikendalikan.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Polisitemia vera adalah penyakit yang jarang ditemukan dan merupakan keganasan 
+                                        pada sel darah yang bertumbuh saat sumsum tulang memproduksi terlalu banyak sel darah merah. 
+                                        Kondisi ini membuat darah menjadi kental sehingga transportnya menjadi lambat. Kondisi ini 
+                                        memiliki komplikasi yang berat seperti penggumpalan darah yang menyebabkan terjadinya serangan 
+                                        jantung atau stroke. Diagnosis ditegakkan berdasarkan anamnesis, pemeriksaan fisik, dan pemeriksaan 
+                                        penunjang. Melalui anamnesis dan pemeriksaan fisik, dokter akan mencari gejala dari penyakit 
+                                        pada pengidap, kemudian dokter melakukan pemeriksaan penunjang untuk membantu dalam penegakkan 
+                                        diagnosis.
                                         </br> </br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;CML / LGK merupakan penyakit sel punca hematopoiesis multipotensial yang dicirikan
-                                        dengan adanya anemia serta adanya granulositosis ekstrim, imaturitas granulositik,
-                                        basofilia, terkadang trombositosis, dan splenomegali. Sel hematopoietik yang
-                                        mengalami gangguan memiliki perubahan kromosom dimana terjadi translokasi
-                                        antara kromosom 9 dengan kromosom 22 pada 95% kasus. Translokasi ini memberikan
-                                        gambaran klasik dimana terdapat kromosom yang abnormal berupa bentuk pemendekan
-                                        kromosom 22 yang dikenal dengan kromosom Philadelphia. </br></br></br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Penyebab dari polisitemia vera adalah keganasan/kanker yang berada dalam 
+                                        grup myeloproliferative. Hal ini terjadi ketika mutasi genetik pada gen yang berfungsi untuk 
+                                        mengontrol produksi sel darah. Sedangkan penyebab dari mutasi genetiknya masih belum diketahui 
+                                        hingga sekarang. Perlu diketahui, bahwa penyakit iniumumnya tidak diturunkan melalui orang tua 
+                                        kepada anaknya.Polisitemia vera dapat muncul di usia berapa saja, namun yang paling sering muncul 
+                                        pada orang dewasa di atas usia 60 tahun. </br></br></br>
                                         </a>
                                         </p>
                                         </li>

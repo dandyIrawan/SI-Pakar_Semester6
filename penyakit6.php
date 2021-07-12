@@ -18,8 +18,8 @@
 <section class="bg-light py-1 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bolder">Leukemia Granulositik Kronik</h2>
-                    <p class="lead mb-0">Chronic Myelogenous Leukemia</p>
+                    <h2 class="fw-bolder">Leukemia Eosinofilik Kronis</h2>
+                    <p class="lead mb-0">Chronic Eosinophilic Leukemia</p>
                 </div>
                 <div class="row gx-20 justify-content-center">
                     <!-- Pricing card free-->
@@ -31,22 +31,15 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <p align=justify>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia granulositik kronik (LGK) atau dalam bahasa Inggris
-                                        chronic myelogenous leukemia (CML) merupakan gangguan sel punca
-                                        klonal yang masuk dalam golongan myeloproliferative neoplasms (MPN).
-                                        Berbeda dengan leukemia akut, CML memiliki perjalanan penyakit yang
-                                        lebih panjang, gejala yang muncul bertahap lebih lama, dan bisa dikatakan
-                                        “lebih jinak”. Bahkan, saat ini dengan pengobatan target yaitu melalui
-                                        obat-obatan inhibitor tirosin kinase, CML saat ini telah menjadi penyakit
-                                        kronik yang dapat dikendalikan.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia eosinofilik kronis adalah bentuk kanker di mana terlalu 
+                                        banyak eosinofil ditemukan di sumsum tulang , darah , dan jaringan lain. Sebagian besar 
+                                        kasus terkait dengan gen fusi . Tanda dan gejala mungkin termasuk penurunan berat badan, 
+                                        demam, malaise , batuk, lesi kulit dan mukosa, diare, dan neuropati perifer . Gejala jantung 
+                                        juga mungkin terjadi. 
                                         </br> </br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;CML / LGK merupakan penyakit sel punca hematopoiesis multipotensial yang dicirikan
-                                        dengan adanya anemia serta adanya granulositosis ekstrim, imaturitas granulositik,
-                                        basofilia, terkadang trombositosis, dan splenomegali. Sel hematopoietik yang
-                                        mengalami gangguan memiliki perubahan kromosom dimana terjadi translokasi
-                                        antara kromosom 9 dengan kromosom 22 pada 95% kasus. Translokasi ini memberikan
-                                        gambaran klasik dimana terdapat kromosom yang abnormal berupa bentuk pemendekan
-                                        kromosom 22 yang dikenal dengan kromosom Philadelphia. </br></br></br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;CEL yang terkait dengan mutasi pada PDGFRA dapat diobati dengan 
+                                        imatinib dan memiliki prognosis yang sangat baik. Di sisi lain, CEL yang terkait dengan mutasi FGFR1 memiliki prognosis yang sangat buruk.
+                                         Perkembangan dapat terjadi dari CEL ke AEL atau AML dalam kasus yang jarang terjadi. </br></br></br>
                                         </a>
                                         </p>
                                         </li>
