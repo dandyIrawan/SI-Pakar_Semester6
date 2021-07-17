@@ -88,8 +88,7 @@ header("location: about.php");
 				<div class="col-sm-10">
 					<select class="form-control" name="jenispenyakit"  onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Sel darah</option>
-                <option>Trombosit</option>
+                <option>Mieloproliferatif</option>
   		</select>
                     
 				</div>

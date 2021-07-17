@@ -52,8 +52,7 @@ header("location: about.php");
 				<label for="sel1">Jenis Penyakit</label>            
 				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Sel darah</option>
-                <option>Trombosit</option>
+                <option>Mieloproliferatif</option>
   		</select>
               </form>
        <br>     
@@ -96,7 +95,7 @@ header("location: about.php");
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
                       echo  "<br><label>LAIN-LAIN</label><br>";
- 			$tampil="select * from gejala where daerah='laim-lain' and jenispenyakit= \"".$_POST['penyakitt']."\"";
+ 			$tampil="select * from gejala where daerah='lain-lain' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";

@@ -49,8 +49,7 @@ include "session.php";
 				<label for="sel1">Jenis Penyakit</label>            
 				<select class="form-control" name="penyakitt" onChange='this.form.submit();'>
 				<option>Penyakit</option>
-                <option>Sel darah</option>
-                <option>Trombosit</option>
+                <option>Mieloproliferatif</option>
   		</select>
               </form>
         <br><form id="form1" name="form1" method="post">
