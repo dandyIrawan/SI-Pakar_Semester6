@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 04, 2021 at 06:10 AM
+-- Generation Time: Jul 17, 2021 at 10:15 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -21,6 +21,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `sip`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `iduser` int(20) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `nama` varchar(20) NOT NULL,
+  `email` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`iduser`, `username`, `password`, `nama`, `email`) VALUES
+(1, 'admin', '123', 'admin', 'admin@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -43,7 +64,12 @@ INSERT INTO `basispengetahuan` (`namapenyakit`, `gejala`) VALUES
 ('Mielofibrosis', 'Lemas'),
 ('Poly Vera', 'Pusing'),
 ('Trombosit', 'Lemas'),
-('Poly Vera', 'Pusing');
+('Poly Vera', 'Pusing'),
+('Mielofibrosis', 'Pusing'),
+('Mielofibrosis', 'Pusing'),
+('Trombosit', 'Pilek'),
+('Trombosit', 'Lemas'),
+('hati', 'Lemas');
 
 -- --------------------------------------------------------
 
@@ -65,7 +91,8 @@ CREATE TABLE `gejala` (
 INSERT INTO `gejala` (`idgejala`, `gejala`, `daerah`, `jenispenyakit`) VALUES
 ('G001', 'Lemas', 'Kaki', 'Trombosit'),
 ('G002', 'Pilek', 'Badan', 'Trombosit'),
-('G003', 'Pusing', 'Kepala', 'Sel darah');
+('G003', 'Pusing', 'Kepala', 'Sel darah'),
+('G0033', 'Pusing', 'Kaki', 'Sel darah');
 
 -- --------------------------------------------------------
 
@@ -85,6 +112,8 @@ CREATE TABLE `penyakit` (
 --
 
 INSERT INTO `penyakit` (`idpenyakit`, `namapenyakit`, `jenispenyakit`, `keterangan`) VALUES
+('00000', 'hati', 'Trombosit', 'lemas'),
+('P0003', 'Mielofibrosis', 'Sel darah', 'qqqqqq'),
 ('P001', 'Poly Vera', 'Sel darah', 'abcd'),
 ('P002', 'Trombosit', 'Trombosit', 'TROMBOSIT');
 
@@ -95,22 +124,31 @@ INSERT INTO `penyakit` (`idpenyakit`, `namapenyakit`, `jenispenyakit`, `keterang
 --
 
 CREATE TABLE `user` (
-  `iduser` varchar(20) NOT NULL,
+  `iduser` int(10) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `nama` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nama` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`iduser`, `username`, `password`, `nama`) VALUES
-('U001', 'admin', 'admin', 'admin');
+INSERT INTO `user` (`iduser`, `username`, `nama`, `password`, `email`) VALUES
+(1, 'dandyirawan', 'dandi', '11', 'ahmaddandiirawan@gmail.com'),
+(2, 'fadil1', 'fadil', '222', 'e41180087@student.polije.ac.id'),
+(3, 'coba', 'coba', '333', 'qqqq');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`iduser`);
 
 --
 -- Indexes for table `gejala`
@@ -123,6 +161,28 @@ ALTER TABLE `gejala`
 --
 ALTER TABLE `penyakit`
   ADD PRIMARY KEY (`idpenyakit`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`iduser`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `iduser` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `iduser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

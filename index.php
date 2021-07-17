@@ -15,13 +15,13 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image: url('assets/img/seldarah.jpg')">
             <div class="container px-5">
                 <a class="navbar-brand" href="#!">SI Pakar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#!">Beranda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#features">Penyakit</a></li>
                         <li class="nav-item"><a class="nav-link" href="#penyakit">Petunjuk</a></li>
                         <li class="nav-item"><a class="nav-link" href="#kontak">Lainnya</a></li>
@@ -30,17 +30,17 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-dark py-5"style="background-image: url('assets/img/seldarah2.jpg')" >
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
-                        <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">SISTEM PAKAR</h1>
-                            <p class="lead text-white-50 mb-4">DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</p>
+                        <div class="text-center my-5"></br></br></br>
+                            <h1 class="display-4 fw-bolder text-white mb-2">SISTEM PAKAR</h1>
+                            <p class="display-8 fw-bolder text-white mb-2">DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</p></br></br>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="login.php">Masuk</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Info</a>
-                            </div>
+                                
+                            </div></br></br></br></br>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,8 @@
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Petunjuk</h2>
                     <p class="lead mb-0">Instructions</p>
-                </div>
+                </div><center>
+            <img src="alur.jpg" class="img-fluid" width="1000px"></center>
                 <div class="row gx-7 justify-content-center">
                     <!-- Pricing card free-->
                     <div class="col-lg-6 col-xl-4">
@@ -256,8 +257,7 @@
                         </div>
                     </div>
                 </div>
-            </div><center>
-            <img src="alur.jpg" class="img-fluid" width="1000px"></center>
+            </div>
         </section>
         <!-- Testimonials section-->
         <section class="py-5 border-bottom" id="kontak">

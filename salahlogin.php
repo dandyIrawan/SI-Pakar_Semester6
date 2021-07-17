@@ -43,18 +43,23 @@ header("location: about.php");
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="welcome.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
-      <p><a href="diagnosa.php"><button type="button" class="btn btn-primary btn-block">DIAGNOSA PENYAKIT</button></a></p>
-      <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-primary btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-primary btn-block">ABOUT</button></a></p>
-      <br><br><br><br><br><br><br><br><br><br>
-      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN</button></p>
+      <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block">DIAGNOSA PENYAKIT</button></a></p>
+      <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
+      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
+      <br><br><br><br><br><br>
+      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
+      <p><a href="register.php"><button type="button" class="btn btn-primary btn-block">REGISTRASI</button></a></p>
+      <p><a href="logout2.php"><button type="button" class="btn btn-primary btn-block">LOGOUT</button></a></p>
+    
     </div>
-    <div class="col-sm-8 text-left"> 
+    
+    
+    <div class="col-sm-8 text-left" > 
       <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
-    <div class="alert alert-danger alert-dismissible" id="alert">
-        <a href="index.php" class="close">&times;</a>
-        USERNAME ATAU PASSWORD SALAH, SILAHKAN LOGIN LAGI
+<div class="alert alert-danger alert-dismissible" id="alert">
+        <a href="welcome.php" class="close">&times;</a>
+        USERNAME ATAU PASSWORD SALAH, SILAHKAN LOGIN LAGI!
         </div>
         <div class="panel panel-info">
                 <div class="panel-heading"></div>
@@ -79,7 +84,7 @@ header("location: about.php");
       <div class="modal-content">
         <div class="modal-header" style="padding:35px 50px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login Admin</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
           <form role="form" method="post" action="ceklogin.php">
@@ -104,7 +109,8 @@ header("location: about.php");
   </div> 
 
 <footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
+</br></br> <p>Teknik Informatika - Politeknik Negeri Jember</p></br>
+  <p></p>
 </footer>
 
 <script>
@@ -117,3 +123,4 @@ $(document).ready(function(){
 
 </body>
 </html>
+

@@ -26,7 +26,6 @@
                     <div class="col-lg-30 col-xl-0">
                         <div class="card mb-5 mb-xl-0">
                             <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold">Definisi</div>
                                 </br>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
@@ -44,7 +43,7 @@
                                         </p>
                                         </li>
                                        
-                                </ul> <center><a href="index.php">Kembali</a> </center>
+                                </ul> <center><a href="index.php#features">Kembali</a> </center>
                                 </div>
                         </div>
                     </div>

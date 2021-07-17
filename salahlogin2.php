@@ -8,7 +8,7 @@
    
     <style>
             body{
-            background:#212529; 
+            background:#000010; 
             }
             </style>
     </head>
@@ -28,7 +28,7 @@
         </form>
             
         <div class="login-help">
-            <a href="welcome.php">Kembali</a> 
+            <a href="index.php">Kembali</a> 
         </div>
         </div>
        

@@ -45,8 +45,8 @@ include "session.php";
     </div>
     <div class="col-sm-8 text-left"> 
        <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
-</h2></center><br>
-      <p>Selamat datang <?php echo $login_session; ?>.Silahkan pilih menu yang diinginkan</p>
+</h2><br><br><br><br><br>
+      <p>Selamat datang <?php echo $login_session; ?>.Silahkan pilih menu yang diinginkan</p></center>
     </div>
   </div>
 </div>
