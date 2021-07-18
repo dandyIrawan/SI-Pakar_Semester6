@@ -13,15 +13,16 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body id="home" >
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image: url('assets/img/seldarah.jpg')">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">SI Pakar</a>
+                <a class="navbar-brand" href="#!"><i class="bi bi-gear-fill"></i>  SI Pakar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#!">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="metode.php">Metode</a></li>
                         <li class="nav-item"><a class="nav-link" href="#features">Penyakit</a></li>
                         <li class="nav-item"><a class="nav-link" href="#penyakit">Petunjuk</a></li>
                         <li class="nav-item"><a class="nav-link" href="#kontak">Lainnya</a></li>
@@ -30,7 +31,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5"style="background-image: url('assets/img/seldarah2.jpg')" >
+        <header class="bg-dark py-5"style="background-image: url('assets/img/seldarah2.jpg')">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">

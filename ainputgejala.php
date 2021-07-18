@@ -71,14 +71,11 @@ header("location: about.php");
 				</div>
 			</div>
 			<div class="form-group ">
-				<label class="control-label col-sm-2" for="alamat">Daerah:</label>
+				<label class="control-label col-sm-2" for="alamat">Input:</label>
 				<div class="col-sm-10">           
 				<select class="form-control" name="daerah"  onChange='this.form.submit();'>
-				<option>Daerah</option>
-                <option>Kepala</option>
-                <option>Badan</option>
-                <option>Kaki</option>
-                <option>Lain-lain</option>
+				<option>Input</option>
+                <option>Gejala</option>
   		</select>
                     
 				</div>

@@ -65,31 +65,16 @@ include "session.php";
 					?>
   		</select>
  
-        <br><label for="sel2">GEJALA</label><br>
+        <br><label for="sel2">Gejala</label><br>
 <form id="form2" name="form2" method="post" action="diagnosa.php">
+  
     <div class="panel panel-primary">
-        <div class="panel-heading">KEPALA</div>
-        <div class="panel-body">
- 			<?php 
-            if(isset($_POST['penyakitt']))
-                  if($_POST['penyakitt']!="jenispenyakit"){
- 			$tampil="select * from gejala where daerah='kepala' and jenispenyakit= \"".$_POST['penyakitt']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
-        <br>
-            </div>
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">BADAN</div>
+        <div class="panel-heading"></div>
             <div class="panel-body">          
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
- 			$tampil="select * from gejala where daerah='badan' and jenispenyakit= \"".$_POST['penyakitt']."\"";
+ 			$tampil="select * from gejala where daerah='Gejala' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -97,36 +82,6 @@ include "session.php";
                   }
 					?>
         </div>
-    </div>
-     <div class="panel panel-primary">
-        <div class="panel-heading">KAKI</div>
-            <div class="panel-body">            
- 			<?php 
-            if(isset($_POST['penyakitt']))
-                  if($_POST['penyakitt']!="jenispenyakit"){
- 			$tampil="select * from gejala where daerah='kaki' and jenispenyakit= \"".$_POST['penyakitt']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
-         </div>
-    </div>
-     <div class="panel panel-primary">
-        <div class="panel-heading">LAIN-LAIN</div>
-                <div class="panel-body">           
- 			<?php 
-            if(isset($_POST['penyakitt']))
-                  if($_POST['penyakitt']!="jenispenyakit"){
- 			$tampil="select * from gejala where daerah='lain-lain' and jenispenyakit= \"".$_POST['penyakitt']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
-         </div>
     </div>
    
     <br><button type="submit" name ="submit" class="btn btn-primary">Simpan</button>
