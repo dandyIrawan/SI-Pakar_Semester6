@@ -42,7 +42,7 @@ header("location: about.php");
       <p><a href="welcome.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
       <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block active">DIAGNOSA PENYAKIT</button></a></p>
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
+      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">PETUNJUK</button></a></p>
         
         <br><br><br><br><br><br><br><br><br><br><br><br>
       <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
@@ -65,7 +65,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                       echo  "<br><label>Gejala</label><br>";
+                       echo  "<br><label>Gejala (Pilih salah Satu)</label><br>";
  			$tampil="select * from gejala where daerah='Gejala' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  

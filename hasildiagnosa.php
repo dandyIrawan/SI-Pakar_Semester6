@@ -45,7 +45,7 @@ header("location: about.php");
       <p><a href="welcome.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
       <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block">DIAGNOSA PENYAKIT</button></a></p>
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
+      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">PETUNJUK</button></a></p>
       <br><br><br><br><br><br><br><br><br><br><br><br>
       <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
       <p><a href="register.php"><button type="button" class="btn btn-succes btn-block">REGISTRASI</button></a></p>

@@ -45,7 +45,7 @@ header("location: about.php");
       <p><a href="welcome.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
       <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block">DIAGNOSA PENYAKIT</button></a></p>
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
-      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
+      <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">PETUNJUK</button></a></p>
       <br><br><br><br><br><br><br><br><br><br><br><br>
       <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
       <p><a href="register.php"><button type="button" class="btn btn-succes btn-block">REGISTRASI</button></a></p>
@@ -58,12 +58,11 @@ header("location: about.php");
         <div class="panel panel-info">
          <div class="panel-heading"><center><h2>SISTEM PAKAR DIAGNOSA PENYAKIT MYELOPROLIFERATIVE SYNDROME</h2></center></div>
                 <div class="panel-body">
-                    <p align=justify>Penyakit mieloproliferatif (biasa dikenal neoplasma mieloproliferatif) merupakan sekelompok penyakit kanker darah langka dimana kelebihan sel darah merah, 
-                    sel darah putih atau trombosit diproduksi di sumsung tulang. Myelo mengacu pada sumsung tulang, prolifetarif menggambarkan pertumbuhan sel darah yang cepat dan neoplasama 
-                    menggambarkan pertumbuhan yang tidak normal. Ada beberapa jenis penyakit yakni penyakit polisitemia vera (PV), trombositemia esensial (TE), mielofibrosis idiopatik kronik 
-                    dengan metaplasia mieloid / MMM, sindroma hipereosinofilik/ SHE. Sementara klasifikasi WHO menyatakan bahwa leukemia mielogenous kronik / LMK dan leukemia netrofilik kronik
-                    juga termasuk dalam kriteria kelompok penyakit ini.</p> <p>Dari latar belakang tersebut maka diperlukan sebuah sitem identifikasi berdasarkan sel darah untuk membantu pihak	
-                    medis	dalam	mendeteksi dini pada penyakit myeloproliferative syndrome.</p>
+                    <p align=justify>Penyakit Mieloproliferatif merupakan sekelompok penyakit kanker darah langka dimana kelebihan sel darah merah, 
+                    sel darah putih atau trombosit diproduksi di sumsung tulang. Mielo mengacu pada sumsung tulang, prolifetarif menggambarkan pertumbuhan sel darah yang cepat dan neoplasama 
+                    menggambarkan pertumbuhan yang tidak normal. Ada beberapa jenis penyakit yakni penyakit polisitemia vera (PV), trombositemia esensial (TE), mielofibrosis, sindroma hipereosinofilik (SHE). 
+                    Sementara klasifikasi WHO menyatakan bahwa leukemia mielogenous kronik (LMK) dan leukemia netrofilik kronik
+                    juga termasuk dalam kriteria kelompok penyakit ini.</p>
             </div>
         </div>
       
@@ -104,7 +103,7 @@ header("location: about.php");
 
 <footer class="container-fluid text-center">
 
-  <p></p>
+  
 </footer>
 
 <script>

@@ -50,10 +50,10 @@
         <!-- Features section-->
         <section class="py-5 border-bottom" id="features">
           <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Sistem Pakar Penyakit Mieloproliferatif Syndrome</h2>
+                    <h2 class="fw-bolder">Sistem Pakar Penyakit Myeloproliferative Syndrome</h2>
                     <p> </p>
                     <p class="lead mb-0">Sistem Pakar ini dibuat menggunakan metode Case Base Reasoning,
-                    dibuat dengan tujuan untuk membantu pihak medis dalam diagnosa penyakit Mieloproliferatif Syndrome </p>
+                    dibuat dengan tujuan untuk membantu pihak medis dalam diagnosa penyakit Myeloproliferative Syndrome </p>
                 </div>
                 <p> <div class="container px-5 my-5">
                 <div class="row gx-5">
@@ -88,7 +88,7 @@
                    
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Leukemia Granulositik Kronik</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Mielositik Kronik</h2><br>
                         <p>Kanker indolen yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.</p>
                         <a class="text-decoration-none" href="penyakit4.php">
                             Baca lebih lanjut
@@ -321,16 +321,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="d-flex"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <div class=""><b><i class="bi bi-whatsapp">  +62 852 3110 5339</b></i></div>
-                                
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div>
                 </div>
