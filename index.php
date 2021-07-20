@@ -52,7 +52,8 @@
           <div class="text-center mb-5">
                     <h2 class="fw-bolder">Sistem Pakar Penyakit Mieloproliferatif Syndrome</h2>
                     <p> </p>
-                    <p class="lead mb-0">Sistem Pakar ini dibuat menggunakan metode Case Base Reasoning, dibuat dengan tujuan untuk membantu pihak medis dalam diagnosa penyakit Mieloproliferatif Syndrome </p>
+                    <p class="lead mb-0">Sistem Pakar ini dibuat menggunakan metode Case Base Reasoning,
+                    dibuat dengan tujuan untuk membantu pihak medis dalam diagnosa penyakit Mieloproliferatif Syndrome </p>
                 </div>
                 <p> <div class="container px-5 my-5">
                 <div class="row gx-5">
