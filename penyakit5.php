@@ -18,7 +18,7 @@
 <section class="bg-light py-1 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bolder">Leukemia Neutrofilik Kronis</h2>
+                    <h2 class="fw-bolder">Leukemia Neutrofil Kronis</h2>
                     <p class="lead mb-0">Chronic Neutrophilic Leukemia</p>
                 </div>
                 <div class="row gx-20 justify-content-center">
@@ -30,7 +30,7 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <p align=justify>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia neutrofilik kronis (CNL) adalah neoplasma mieloproliferatif langka yang menampilkan 
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia neutrofil kronis (CNL) adalah neoplasma mieloproliferatif langka yang menampilkan 
                                         neutrofilia persisten dalam darah perifer, hiperplasia myeloid di sumsum tulang , 
                                         hepatosplenomegali , dan tidak adanya kromosom Philadelphia atau gen fusi BCR/ABL .
                                         </br> </br>

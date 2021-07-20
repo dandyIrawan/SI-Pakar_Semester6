@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Leukemia Neutrofilik Kronis</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Neutrofil Kronis</h2>
                         <p>Darah pasien banyak mengandung sel darah putih yang disebut neutrofil.</p>
                         <a class="text-decoration-none" href="penyakit5.php"></br>
                         Baca lebih lanjut
@@ -107,7 +107,7 @@
                     
                     <div class="col-lg-4">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Leukemia Eosinofilik Kronis</h2>
+                        <h2 class="h4 fw-bolder">Leukemia Eosinofil Kronis</h2>
                         <p>Terdapat banyak jenis sel darah putih yang disebut eosinofil pada sumsum tulang, darah, dan jaringan tubuh lain.</p>
                         <a class="text-decoration-none" href="penyakit6.php">
                         Baca lebih lanjut

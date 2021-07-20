@@ -18,7 +18,7 @@
 <section class="bg-light py-1 border-bottom" id="penyakit">
             <div class="container px-5 my-5">
                 <div class="text-center mb-4">
-                    <h2 class="fw-bolder">Leukemia Eosinofilik Kronis</h2>
+                    <h2 class="fw-bolder">Leukemia Eosinofil Kronis</h2>
                     <p class="lead mb-0">Chronic Eosinophilic Leukemia</p>
                 </div>
                 <div class="row gx-20 justify-content-center">
@@ -30,7 +30,7 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <p align=justify>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia eosinofilik kronis adalah bentuk kanker di mana terlalu 
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Leukemia eosinofil kronis adalah bentuk kanker di mana terlalu 
                                         banyak eosinofil ditemukan di sumsum tulang , darah , dan jaringan lain. Sebagian besar 
                                         kasus terkait dengan gen fusi . Tanda dan gejala mungkin termasuk penurunan berat badan, 
                                         demam, malaise , batuk, lesi kulit dan mukosa, diare, dan neuropati perifer . Gejala jantung 

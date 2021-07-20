@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 17, 2021 at 10:15 AM
+-- Generation Time: Jul 20, 2021 at 09:54 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -51,7 +51,7 @@ INSERT INTO `admin` (`iduser`, `username`, `password`, `nama`, `email`) VALUES
 
 CREATE TABLE `basispengetahuan` (
   `namapenyakit` varchar(100) NOT NULL,
-  `gejala` varchar(50) NOT NULL
+  `gejala` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -59,17 +59,12 @@ CREATE TABLE `basispengetahuan` (
 --
 
 INSERT INTO `basispengetahuan` (`namapenyakit`, `gejala`) VALUES
-('Poly Vera', 'Pusing'),
-('Trombosit', 'Pilek'),
-('Mielofibrosis', 'Lemas'),
-('Poly Vera', 'Pusing'),
-('Trombosit', 'Lemas'),
-('Poly Vera', 'Pusing'),
-('Mielofibrosis', 'Pusing'),
-('Mielofibrosis', 'Pusing'),
-('Trombosit', 'Pilek'),
-('Trombosit', 'Lemas'),
-('hati', 'Lemas');
+('Polisitemia Vera', 'Sakit kepala, vertigo, serangan stroke, nyeri dada, gangguan penglihatan.'),
+('Trombositemia Esensial', 'Sakit kepala, nyeri jari tangan dan kaki, rangsang panas/dingin, migrain dan kejang.'),
+('Mielofibrosis', 'Demam, penurunan berat badan dan nyeri tulang.'),
+('Leukemia mielositik (granulositik) kronik (LGK)', 'Cepat lelah, berat badan turun, cepat kenyang, demam ringan, anemia.'),
+('Leukemia Neutrofil Kronis', 'Demam, Infeksi yang sering/berulang, infeksi yang tidak biasa, sariawan, abses kulit/bisul.'),
+('Leukemia Eosinofil Kronis', 'Ruam kulit, gatal, diare, hidung tersumbat.');
 
 -- --------------------------------------------------------
 
@@ -89,10 +84,12 @@ CREATE TABLE `gejala` (
 --
 
 INSERT INTO `gejala` (`idgejala`, `gejala`, `daerah`, `jenispenyakit`) VALUES
-('G001', 'Lemas', 'Kaki', 'Trombosit'),
-('G002', 'Pilek', 'Badan', 'Trombosit'),
-('G003', 'Pusing', 'Kepala', 'Sel darah'),
-('G0033', 'Pusing', 'Kaki', 'Sel darah');
+('G1', 'Sakit kepala, vertigo, serangan stroke, nyeri dada, gangguan penglihatan.', 'Gejala', 'Mieloproliferatif'),
+('G2', 'Sakit kepala, nyeri jari tangan dan kaki, rangsang panas/dingin, migrain dan kejang.', 'Gejala', 'Mieloproliferatif'),
+('G3', 'Demam, penurunan berat badan dan nyeri tulang.', 'Gejala', 'Mieloproliferatif'),
+('G4', 'Cepat lelah, berat badan turun, cepat kenyang, demam ringan, anemia.', 'Gejala', 'Mieloproliferatif'),
+('G5', 'Demam, Infeksi yang sering/berulang, infeksi yang tidak biasa, sariawan, abses kulit/bisul.', 'Gejala', 'Mieloproliferatif'),
+('G6', 'Ruam kulit, gatal, diare, hidung tersumbat.', 'Gejala', 'Mieloproliferatif');
 
 -- --------------------------------------------------------
 
@@ -112,10 +109,12 @@ CREATE TABLE `penyakit` (
 --
 
 INSERT INTO `penyakit` (`idpenyakit`, `namapenyakit`, `jenispenyakit`, `keterangan`) VALUES
-('00000', 'hati', 'Trombosit', 'lemas'),
-('P0003', 'Mielofibrosis', 'Sel darah', 'qqqqqq'),
-('P001', 'Poly Vera', 'Sel darah', 'abcd'),
-('P002', 'Trombosit', 'Trombosit', 'TROMBOSIT');
+('P1', 'Polisitemia Vera', 'Mieloproliferatif', 'Polycythemia vera. Kadar sel darah merah tinggi, baik pada sumsum tulang maupun darah, sehingga darah menjadi lebih kental.'),
+('P2', 'Trombositemia Esensial', 'Mieloproliferatif', 'Trombositemia esensial. Terjadi peningkatan jumlah trombosit atau platelet di dalam darah.'),
+('P3', 'Mielofibrosis', 'Mieloproliferatif', 'Mielofibrosis. Kondisi di mana banyak terdapat sel darah merah dan sel darah putih yang tidak sempurna di dalam tubuh.'),
+('P4', 'Leukemia mielositik (granulositik) kronik (LGK)', 'Mieloproliferatif', 'Leukemia mielositik (granulositik) kronik (LGK). Kanker indolen (bertumbuh secara lambat) yang disebabkan karena banyaknya sel darah putih yang tidak sempurna di sumsum tulang dan darah.'),
+('P5', 'Leukemia Neutrofil Kronis', 'Mieloproliferatif', 'Leukemia Neutrofil Kronis. Darah pasien banyak mengandung sel darah putih yang disebut neutrofil.'),
+('P6', 'Leukemia Eosinofil Kronis', 'Mieloproliferatif', 'Leukemia Eosinofil Kronis. Terdapat banyak jenis sel darah putih yang disebut eosinofil pada sumsum tulang, darah, dan jaringan tubuh lain.');
 
 -- --------------------------------------------------------
 
@@ -137,8 +136,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`iduser`, `username`, `nama`, `password`, `email`) VALUES
 (1, 'dandyirawan', 'dandi', '11', 'ahmaddandiirawan@gmail.com'),
-(2, 'fadil1', 'fadil', '222', 'e41180087@student.polije.ac.id'),
-(3, 'coba', 'coba', '333', 'qqqq');
+(7, 'admin', 'admin', 'admin', 'admin@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -182,7 +180,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `iduser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
