@@ -55,15 +55,8 @@ header("location: about.php");
     
     
     <div class="col-sm-8 text-left" > 
-<<<<<<< HEAD
-    
-
-=======
-      <center><h2>SISTEM PAKAR DIAGNOSA PENYAKIT MYELOPROLIFERATIVE SYNDROME
-</h2></center><br>
->>>>>>> 8322627045a6c67f1d5b7610d90e836fe5787519
         <div class="panel panel-info">
-         <div class="panel-heading"><center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</h2></center></div>
+         <div class="panel-heading"><center><h2>SISTEM PAKAR DIAGNOSA PENYAKIT MYELOPROLIFERATIVE SYNDROME</h2></center></div>
                 <div class="panel-body">
                     <p align=justify>Penyakit mieloproliferatif (biasa dikenal neoplasma mieloproliferatif) merupakan sekelompok penyakit kanker darah langka dimana kelebihan sel darah merah, 
                     sel darah putih atau trombosit diproduksi di sumsung tulang. Myelo mengacu pada sumsung tulang, prolifetarif menggambarkan pertumbuhan sel darah yang cepat dan neoplasama 
