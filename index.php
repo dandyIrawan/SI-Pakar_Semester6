@@ -17,7 +17,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image: url('assets/img/seldarah.jpg')">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!"><i class="bi bi-gear-fill"></i>  SI Pakar</a>
+                <a class="navbar-brand" href="#!"><i class="bi bi-gear-fill"></i> SI Sistem Pakar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -37,7 +37,7 @@
                     <div class="col-lg-6">
                         <div class="text-center my-5"></br></br></br>
                             <h1 class="display-4 fw-bolder text-white mb-2">SISTEM PAKAR</h1>
-                            <p class="display-8 fw-bolder text-white mb-2">DETEKSI DINI MYELOPROLIFERATIVE SYNDROME</p></br></br>
+                            <p class="display-8 fw-bolder text-white mb-2">DIAGNOSA PENYAKIT MYELOPROLIFERATIVE SYNDROME</p></br></br>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="login.php">Masuk</a>
                                 
@@ -50,8 +50,9 @@
         <!-- Features section-->
         <section class="py-5 border-bottom" id="features">
           <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Penyakit Mieloproliferatif</h2>
-                    <p class="lead mb-0">Myeloproliferative Syndrome</p>
+                    <h2 class="fw-bolder">Sistem Pakar Penyakit Mieloproliferatif Syndrome</h2>
+                    <p> </p>
+                    <p class="lead mb-0">Sistem Pakar ini dibuat menggunakan metode Case Base Reasoning, dibuat dengan tujuan untuk membantu pihak medis dalam diagnosa penyakit Mieloproliferatif Syndrome </p>
                 </div>
                 <p> <div class="container px-5 my-5">
                 <div class="row gx-5">

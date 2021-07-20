@@ -55,7 +55,7 @@ header("location: about.php");
     
     
     <div class="col-sm-8 text-left" > 
-      <center><h2>SISTEM PAKAR DETEKSI DINI MYELOPROLIFERATIVE SYNDROME
+      <center><h2>SISTEM PAKAR DIAGNOSA PENYAKIT MYELOPROLIFERATIVE SYNDROME
 </h2></center><br>
         <div class="panel panel-info">
                 <div class="panel-heading"></div>
