@@ -12,15 +12,10 @@ include "session.php";
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-$(document).ready( function () {
-    $('#example1').DataTable();  
-} );
-</script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,15 +33,16 @@ $(document).ready( function () {
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
-  <div class="row content">
+   
+  
     <div class="col-sm-2 sidenav">
-      <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block">BERANDA</button></a></p>
+      <p><a href="homeadmin.php"><button type="button" class="btn btn-primary btn-block active">BERANDA</button></a></p>
       <p><a href="penyakit.php"><button type="button" class="btn btn-succes btn-block">PENYAKIT</button></a></p>
       <p><a href="gejala.php"><button type="button" class="btn btn-succes btn-block">GEJALA</button></a></p>
-      <p><a href="basispengetahuan.php"><button type="button" class="btn btn-succes btn-block active">BASIS PENGETAHUAN</button></a></p>
-      <br><br><br><br><br><br><br><br><br><br>
-      </div>
+        <p><a href="basispengetahuan.php"><button type="button" class="btn btn-succes btn-block">BASIS PENGETAHUAN</button></a></p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p><a href="logout.php"><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGOUT</button></a></p>
+      <br> </div>
     <div class="col-sm-8 text-left"> 
         <h2 class="text-center">BASIS PENGETAHUAN</h2>
          <form id="form1" name="form1" method="post" action="basispengetahuan.php">
@@ -69,7 +65,7 @@ $(document).ready( function () {
                             <th>Id Penyakit</th>
 						              	<th>Nama Penyakit</th>
                             <th>Gejala</th>
-                            <th>Detail</th>
+                            <th>Hapus</th>
                         </tr>
                     </thead>
                      <?php
@@ -107,9 +103,6 @@ function checkDelete(){
 }
 </script>
     
-<footer class="container-fluid text-center">
-  <p>Teknik Informatika - Politeknik Negeri Jember</p>
-</footer>
 
 </body>
 </html>

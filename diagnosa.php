@@ -12,13 +12,13 @@ header("location: about.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<br>
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,8 +43,12 @@ header("location: about.php");
       <p><a href="diagnosa.php"><button type="button" class="btn btn-succes btn-block active">DIAGNOSA PENYAKIT</button></a></p>
       <p><a href="daftarpenyakit.php"><button type="button" class="btn btn-succes btn-block">DAFTAR PENYAKIT</button></a></p>
       <p><a href="about.php"><button type="button" class="btn btn-succes btn-block">ABOUT</button></a></p>
-        <br><br><br><br><br><br><br><br><br><br>
-      
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+      <p><button type="button" class="btn btn-primary btn-block" id="myBtn">LOGIN ADMIN</button></p>
+      <p><a href="register.php"><button type="button" class="btn btn-succes btn-block">REGISTRASI</button></a></p>
+      <p><a href="logout2.php"><button type="button" class="btn btn-succes btn-block">LOGOUT</button></a></p>
+    
     </div>
     <div class="col-sm-8 text-left"> 
       <center><h2>DIAGNOSA PENYAKIT</h2></center>
@@ -127,7 +131,7 @@ header("location: about.php");
       <div class="modal-content">
         <div class="modal-header" style="padding:35px 50px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Login Admin</h4>
+          <center> <h4><span class="glyphicon glyphicon-lock"></span> Login Admin</h4></center>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
           <form role="form" method="post" action="ceklogin.php">
@@ -146,7 +150,7 @@ header("location: about.php");
     </div>
   </div> 
 <footer class="container-fluid text-center">
-</br></br> <p>Teknik Informatika - Politeknik Negeri Jember</p></br>
+
 </footer>
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){
@@ -159,6 +163,7 @@ function checkDiagnosa(){
 }
 
 </script>
+<nav class="navbar navbar-inverse"></br><center><p class="text-muted">Teknik Informatika - Politeknik Negeri Jember</p></center></br>
 
 </body>
 </html>
