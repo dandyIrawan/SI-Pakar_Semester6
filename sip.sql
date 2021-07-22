@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 20, 2021 at 09:54 PM
+-- Generation Time: Jul 22, 2021 at 06:40 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -41,7 +41,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`iduser`, `username`, `password`, `nama`, `email`) VALUES
-(1, 'admin', '123', 'admin', 'admin@gmail.com');
+(2, 'admin', 'admin', 'admin', 'admin@gmail.com'),
+(4, 'Admin', 'Admin', 'Admin', 'Admin@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -59,12 +60,22 @@ CREATE TABLE `basispengetahuan` (
 --
 
 INSERT INTO `basispengetahuan` (`namapenyakit`, `gejala`) VALUES
-('Polisitemia Vera', 'Sakit kepala, vertigo, serangan stroke, nyeri dada, gangguan penglihatan.'),
-('Trombositemia Esensial', 'Sakit kepala, nyeri jari tangan dan kaki, rangsang panas/dingin, migrain dan kejang.'),
-('Mielofibrosis', 'Demam, penurunan berat badan dan nyeri tulang.'),
-('Leukemia mielositik (granulositik) kronik (LGK)', 'Cepat lelah, berat badan turun, cepat kenyang, demam ringan, anemia.'),
-('Leukemia Neutrofil Kronis', 'Demam, Infeksi yang sering/berulang, infeksi yang tidak biasa, sariawan, abses kulit/bisul.'),
-('Leukemia Eosinofil Kronis', 'Ruam kulit, gatal, diare, hidung tersumbat.');
+('Polisitemia Vera', 'Vertigo'),
+('Polisitemia Vera', 'nyeri dada'),
+('Trombositemia Esensial', 'Sakit kepala'),
+('Trombositemia Esensial', 'rangsang panas/dingin'),
+('Trombositemia Esensial', 'kejang'),
+('Mielofibrosis', 'Demam'),
+('Mielofibrosis', 'nyeri tulang'),
+('Leukemia mielositik (granulositik) kronik (LGK)', 'nyeri tulang'),
+('Leukemia mielositik (granulositik) kronik (LGK)', 'Cepat lelah'),
+('Leukemia mielositik (granulositik) kronik (LGK)', 'demam ringan'),
+('Leukemia Neutrofil Kronis', 'Infeksi yang sering/berulang'),
+('Leukemia Neutrofil Kronis', 'infeksi yang tidak biasa'),
+('Leukemia Neutrofil Kronis', 'abses kulit'),
+('Leukemia Eosinofil Kronis', 'Ruam kulit'),
+('Leukemia Eosinofil Kronis', 'sering diare'),
+('Leukemia mielositik (granulositik) kronik (LGK)', 'anemia');
 
 -- --------------------------------------------------------
 
@@ -84,12 +95,21 @@ CREATE TABLE `gejala` (
 --
 
 INSERT INTO `gejala` (`idgejala`, `gejala`, `daerah`, `jenispenyakit`) VALUES
-('G1', 'Sakit kepala, vertigo, serangan stroke, nyeri dada, gangguan penglihatan.', 'Gejala', 'Mieloproliferatif'),
-('G2', 'Sakit kepala, nyeri jari tangan dan kaki, rangsang panas/dingin, migrain dan kejang.', 'Gejala', 'Mieloproliferatif'),
-('G3', 'Demam, penurunan berat badan dan nyeri tulang.', 'Gejala', 'Mieloproliferatif'),
-('G4', 'Cepat lelah, berat badan turun, cepat kenyang, demam ringan, anemia.', 'Gejala', 'Mieloproliferatif'),
-('G5', 'Demam, Infeksi yang sering/berulang, infeksi yang tidak biasa, sariawan, abses kulit/bisul.', 'Gejala', 'Mieloproliferatif'),
-('G6', 'Ruam kulit, gatal, diare, hidung tersumbat.', 'Gejala', 'Mieloproliferatif');
+('G1', 'Vertigo', 'Gejala', 'Mieloproliferatif'),
+('G10', 'anemia', 'Gejala', 'Mieloproliferatif'),
+('G11', 'Infeksi yang sering/berulang', 'Gejala', 'Mieloproliferatif'),
+('G12', 'infeksi yang tidak biasa', 'Gejala', 'Mieloproliferatif'),
+('G13', 'abses kulit', 'Gejala', 'Mieloproliferatif'),
+('G14', 'Ruam kulit', 'Gejala', 'Mieloproliferatif'),
+('G15', 'sering diare', 'Gejala', 'Mieloproliferatif'),
+('G2', 'nyeri dada', 'Gejala', 'Mieloproliferatif'),
+('G3', 'Sakit kepala', 'Gejala', 'Mieloproliferatif'),
+('G4', 'rangsang panas/dingin', 'Gejala', 'Mieloproliferatif'),
+('G5', 'kejang', 'Gejala', 'Mieloproliferatif'),
+('G6', 'Demam', 'Gejala', 'Mieloproliferatif'),
+('G7', 'nyeri tulang', 'Gejala', 'Mieloproliferatif'),
+('G8', 'Cepat lelah', 'Gejala', 'Mieloproliferatif'),
+('G9', 'demam ringan', 'Gejala', 'Mieloproliferatif');
 
 -- --------------------------------------------------------
 
@@ -135,8 +155,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`iduser`, `username`, `nama`, `password`, `email`) VALUES
-(1, 'dandyirawan', 'dandi', '11', 'ahmaddandiirawan@gmail.com'),
-(7, 'admin', 'admin', 'admin', 'admin@gmail.com');
+(7, 'admin', 'admin', 'admin', 'admin@gmail.com'),
+(8, 'user', 'user', 'user', 'user@gmail.com'),
+(9, 'Admin', 'Admin', 'Admin', 'admin@gmail.com'),
+(12, 'User', 'User', 'User', 'User@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -174,13 +196,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `iduser` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `iduser` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `iduser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

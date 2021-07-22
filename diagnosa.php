@@ -65,7 +65,7 @@ header("location: about.php");
  			<?php 
             if(isset($_POST['penyakitt']))
                   if($_POST['penyakitt']!="jenispenyakit"){
-                       echo  "<br><label>Gejala (Pilih salah Satu)</label><br>";
+                       echo  "<br><label>Pilih Gejala</label><br>";
  			$tampil="select * from gejala where daerah='Gejala' and jenispenyakit= \"".$_POST['penyakitt']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
